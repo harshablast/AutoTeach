@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="C1" />
+    <node id="Are the classification of data items in Javascript." />
+    <node id="Dictate the possible values for data." />
+    <node id="Determine the operations that can be performed on the data." />
+    <node id="C2" />
+    <node id="Are the most basic data types in Javascript." />
+    <node id="Include String, Number, Boolean, Undefined, Null, BigInt, Symbol." />
+    <node id="Are immutable, cannot change, add, or remove their properties." />
+    <node id="Are atomic building blocks of data in JavaScript." />
+    <node id="Are passed by value: when assigned to variables or passed to functions, their contents are copied." />
+    <node id="Are compared by value: when comparing two primitive values, their contents are compared." />
+    <node id="C3" />
+    <node id="A sequence of characters in Javascript." />
+    <node id="Is created by enclosing characters in single or double quotes (&quot;Hello&quot;, 'Hello')." />
+    <node id="Can be manipulated using various built-in methods (.length, .toUpperCase(), etc.)." />
+    <node id="C4" />
+    <node id="Represents the number of characters in a string." />
+    <node id="Can be accessed using the .length property." />
+    <node id="C5" />
+    <node id="Converts a string to upper or lower case." />
+    <node id="Can be done using the .toUpperCase() and .toLowerCase() methods." />
+    <node id="C6" />
+    <node id="Is a numerical data type in Javascript." />
+    <node id="Can be an integer or a floating point value (123, 120.50)." />
+    <node id="Can be manipulated using various arithmetic operations (+, -, *, /, etc.)." />
+    <node id="C7" />
+    <node id="Represents a whole number." />
+    <node id="Can be positive, negative or zero." />
+    <node id="C8" />
+    <node id="Represents a number with a fractional part." />
+    <node id="Contains a decimal point." />
+    <node id="C9" />
+    <node id="Can only have two values in Javascript: true or false." />
+    <node id="Is used in logical operations (&amp;&amp;, ||, !)." />
+    <node id="C10" />
+    <node id="Is a type of variable in Javascript that has not been assigned a value." />
+    <node id="Is automatically assigned to variables that are declared but not defined (var x;)." />
+    <node id="C11" />
+    <node id="Is a special keyword in Javascript that represents a null or &quot;empty&quot; value." />
+    <node id="Is not the same as an undefined variable (null === undefined // false)." />
+    <node id="C12" />
+    <node id="Is a numeric data type in Javascript that can represent integers of arbitrary length." />
+    <node id="Is created by appending 'n' to the end of an integer (123n)." />
+    <node id="C13" />
+    <node id="Is a unique and immutable data type in Javascript." />
+    <node id="Is used as the key for an object property when the property is intended to be private." />
+    <node id="C14" />
+    <node id="Are data types in Javascript that store multiple values." />
+    <node id="Include Object, Array, Function." />
+    <node id="Are mutable, can change, add, or remove their properties." />
+    <node id="Are passed by reference: when assigned to variables or passed to functions, their reference is copied." />
+    <node id="Are compared by reference: when comparing two objects, their references are compared." />
+    <node id="C15" />
+    <node id="Is a collection of properties in Javascript, each with its own value and key." />
+    <node id="Can contain any data type, including other objects." />
+    <node id="Can be created using object literals ({name: 'John', age: 30})." />
+    <node id="C16" />
+    <node id="Is a special type of object in Javascript that represents a collection of elements." />
+    <node id="Elements are accessed by their index in the array ([0, 1, 2, 3])." />
+    <node id="C17" />
+    <node id="Is a block of code in Javascript designed to perform a particular task." />
+    <node id="Can accept parameters and return a result." />
+    <node id="Is executed when it is invoked (called)." />
+    <node id="Can be defined using function declaration or function expression." />
+    <node id="C18" />
+    <node id="Represents fixed values in JavaScript code." />
+    <node id="Includes array literals, boolean literals, floating-point literals, integer literals, object literals, regexp literals, string literals." />
+    <node id="C19" />
+    <node id="Represent whole number values." />
+    <node id="Can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8), and binary (base 2)." />
+    <node id="C20" />
+    <node id="Represent numbers with fractional parts." />
+    <node id="Have a decimal point." />
+    <node id="C21" />
+    <node id="Represent sequence of characters." />
+    <node id="Can be enclosed in single quotes (' '), double quotes (&quot; &quot;), or backticks (` `)." />
+    <node id="Backticks allow for embedded expressions and multi-line strings." />
+    <node id="C22" />
+    <node id="Represent one of two values: true or false." />
+    <node id="C23" />
+    <node id="Represents the intentional absence of any object value." />
+    <node id="C24" />
+    <node id="Represents a collection of zero or more pairs of property names and associated values of an object." />
+    <node id="C25" />
+    <node id="Represent a list of zero or more expressions." />
+    <node id="Elements are enclosed within square brackets ([ ])." />
+    <node id="C26" />
+    <node id="Represent regular expression patterns." />
+    <node id="Enclosed within slashes (/ /)." />
+    <node id="C27" />
+    <node id="The process of telling Javascript to reserve memory for a variable." />
+    <node id="Can be done using 'var', 'let' and 'const' keywords." />
+    <node id="The variable can be assigned a value at the time of declaration or at a later point." />
+    <node id="C28" />
+    <node id="The process of assigning a value to a declared variable." />
+    <node id="In Javascript, a variable can be initialized at the time of declaration or at a later point." />
+    <node id="C29" />
+    <node id="Refers to the region of your code where a variable is defined." />
+    <node id="In Javascript, variables can have global scope or local scope." />
+    <node id="C30" />
+    <node id="A variable that has global scope." />
+    <node id="Can be defined anywhere in your Javascript code." />
+    <node id="Is accessible from any part of the Javascript code." />
+    <node id="C31" />
+    <node id="A variable that has local scope." />
+    <node id="Will be visible only within a function where it is defined." />
+    <node id="Function parameters are always local to that function." />
+    <edge source="C1" target="Are the classification of data items in Javascript." />
+    <edge source="C1" target="Dictate the possible values for data." />
+    <edge source="C1" target="Determine the operations that can be performed on the data." />
+    <edge source="C1" target="C2" />
+    <edge source="C1" target="C14" />
+    <edge source="C1" target="C18" />
+    <edge source="C1" target="C27" />
+    <edge source="C2" target="Are the most basic data types in Javascript." />
+    <edge source="C2" target="Include String, Number, Boolean, Undefined, Null, BigInt, Symbol." />
+    <edge source="C2" target="Are immutable, cannot change, add, or remove their properties." />
+    <edge source="C2" target="Are atomic building blocks of data in JavaScript." />
+    <edge source="C2" target="Are passed by value: when assigned to variables or passed to functions, their contents are copied." />
+    <edge source="C2" target="Are compared by value: when comparing two primitive values, their contents are compared." />
+    <edge source="C2" target="C3" />
+    <edge source="C2" target="C6" />
+    <edge source="C2" target="C9" />
+    <edge source="C2" target="C10" />
+    <edge source="C2" target="C11" />
+    <edge source="C2" target="C12" />
+    <edge source="C2" target="C13" />
+    <edge source="C3" target="A sequence of characters in Javascript." />
+    <edge source="C3" target="Is created by enclosing characters in single or double quotes (&quot;Hello&quot;, 'Hello')." />
+    <edge source="C3" target="Can be manipulated using various built-in methods (.length, .toUpperCase(), etc.)." />
+    <edge source="C3" target="C4" />
+    <edge source="C3" target="C5" />
+    <edge source="C4" target="Represents the number of characters in a string." />
+    <edge source="C4" target="Can be accessed using the .length property." />
+    <edge source="C5" target="Converts a string to upper or lower case." />
+    <edge source="C5" target="Can be done using the .toUpperCase() and .toLowerCase() methods." />
+    <edge source="C6" target="Is a numerical data type in Javascript." />
+    <edge source="C6" target="Can be an integer or a floating point value (123, 120.50)." />
+    <edge source="C6" target="Can be manipulated using various arithmetic operations (+, -, *, /, etc.)." />
+    <edge source="C6" target="C7" />
+    <edge source="C6" target="C8" />
+    <edge source="C7" target="Represents a whole number." />
+    <edge source="C7" target="Can be positive, negative or zero." />
+    <edge source="C8" target="Represents a number with a fractional part." />
+    <edge source="C8" target="Contains a decimal point." />
+    <edge source="C9" target="Can only have two values in Javascript: true or false." />
+    <edge source="C9" target="Is used in logical operations (&amp;&amp;, ||, !)." />
+    <edge source="C10" target="Is a type of variable in Javascript that has not been assigned a value." />
+    <edge source="C10" target="Is automatically assigned to variables that are declared but not defined (var x;)." />
+    <edge source="C11" target="Is a special keyword in Javascript that represents a null or &quot;empty&quot; value." />
+    <edge source="C11" target="Is not the same as an undefined variable (null === undefined // false)." />
+    <edge source="C12" target="Is a numeric data type in Javascript that can represent integers of arbitrary length." />
+    <edge source="C12" target="Is created by appending 'n' to the end of an integer (123n)." />
+    <edge source="C13" target="Is a unique and immutable data type in Javascript." />
+    <edge source="C13" target="Is used as the key for an object property when the property is intended to be private." />
+    <edge source="C14" target="Are data types in Javascript that store multiple values." />
+    <edge source="C14" target="Include Object, Array, Function." />
+    <edge source="C14" target="Are mutable, can change, add, or remove their properties." />
+    <edge source="C14" target="Are passed by reference: when assigned to variables or passed to functions, their reference is copied." />
+    <edge source="C14" target="Are compared by reference: when comparing two objects, their references are compared." />
+    <edge source="C14" target="C15" />
+    <edge source="C14" target="C16" />
+    <edge source="C14" target="C17" />
+    <edge source="C15" target="Is a collection of properties in Javascript, each with its own value and key." />
+    <edge source="C15" target="Can contain any data type, including other objects." />
+    <edge source="C15" target="Can be created using object literals ({name: 'John', age: 30})." />
+    <edge source="C16" target="Is a special type of object in Javascript that represents a collection of elements." />
+    <edge source="C16" target="Elements are accessed by their index in the array ([0, 1, 2, 3])." />
+    <edge source="C17" target="Is a block of code in Javascript designed to perform a particular task." />
+    <edge source="C17" target="Can accept parameters and return a result." />
+    <edge source="C17" target="Is executed when it is invoked (called)." />
+    <edge source="C17" target="Can be defined using function declaration or function expression." />
+    <edge source="C18" target="Represents fixed values in JavaScript code." />
+    <edge source="C18" target="Includes array literals, boolean literals, floating-point literals, integer literals, object literals, regexp literals, string literals." />
+    <edge source="C18" target="C19" />
+    <edge source="C18" target="C20" />
+    <edge source="C18" target="C21" />
+    <edge source="C18" target="C22" />
+    <edge source="C18" target="C23" />
+    <edge source="C18" target="C24" />
+    <edge source="C18" target="C25" />
+    <edge source="C18" target="C26" />
+    <edge source="C19" target="Represent whole number values." />
+    <edge source="C19" target="Can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8), and binary (base 2)." />
+    <edge source="C20" target="Represent numbers with fractional parts." />
+    <edge source="C20" target="Have a decimal point." />
+    <edge source="C21" target="Represent sequence of characters." />
+    <edge source="C21" target="Can be enclosed in single quotes (' '), double quotes (&quot; &quot;), or backticks (` `)." />
+    <edge source="C21" target="Backticks allow for embedded expressions and multi-line strings." />
+    <edge source="C22" target="Represent one of two values: true or false." />
+    <edge source="C23" target="Represents the intentional absence of any object value." />
+    <edge source="C24" target="Represents a collection of zero or more pairs of property names and associated values of an object." />
+    <edge source="C25" target="Represent a list of zero or more expressions." />
+    <edge source="C25" target="Elements are enclosed within square brackets ([ ])." />
+    <edge source="C26" target="Represent regular expression patterns." />
+    <edge source="C26" target="Enclosed within slashes (/ /)." />
+    <edge source="C27" target="The process of telling Javascript to reserve memory for a variable." />
+    <edge source="C27" target="Can be done using 'var', 'let' and 'const' keywords." />
+    <edge source="C27" target="The variable can be assigned a value at the time of declaration or at a later point." />
+    <edge source="C27" target="C28" />
+    <edge source="C27" target="C29" />
+    <edge source="C28" target="The process of assigning a value to a declared variable." />
+    <edge source="C28" target="In Javascript, a variable can be initialized at the time of declaration or at a later point." />
+    <edge source="C29" target="Refers to the region of your code where a variable is defined." />
+    <edge source="C29" target="In Javascript, variables can have global scope or local scope." />
+    <edge source="C29" target="C30" />
+    <edge source="C29" target="C31" />
+    <edge source="C30" target="A variable that has global scope." />
+    <edge source="C30" target="Can be defined anywhere in your Javascript code." />
+    <edge source="C30" target="Is accessible from any part of the Javascript code." />
+    <edge source="C31" target="A variable that has local scope." />
+    <edge source="C31" target="Will be visible only within a function where it is defined." />
+    <edge source="C31" target="Function parameters are always local to that function." />
+  </graph>
+</graphml>

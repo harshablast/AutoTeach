@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="distinctive_features" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="JS1">
+      <data key="d0">['JavaScript data types are the types of data that can be manipulated in JavaScript.', 'There are two main types of data types in JavaScript: primitive and non-primitive.']</data>
+      <data key="d1">JavaScript Data Types</data>
+    </node>
+    <node id="JS1.1">
+      <data key="d0">['Primitive data types in JavaScript are basic data types that include String, Number, Boolean, Null, Undefined, and Symbol.', 'Primitive data types are immutable, meaning their values cannot be changed.', 'Each primitive data type has its own syntax and rules for manipulation.']</data>
+      <data key="d1">Primitive Data Types</data>
+    </node>
+    <node id="JS1.1.1">
+      <data key="d0">['A String is a sequence of characters in JavaScript.', 'Strings in JavaScript are enclosed within quotes (\'\', "", or ``).']</data>
+      <data key="d1">String</data>
+    </node>
+    <node id="JS1.1.1.1">
+      <data key="d0">['Strings can be manipulated using various methods like concatenation (+), substring(), slice(), etc.', 'String methods do not change the original string, but return a new string.']</data>
+      <data key="d1">String Manipulation</data>
+    </node>
+    <node id="JS1.1.1.2">
+      <data key="d0">['String interpolation is a process of substituting values of variables into placeholders in a string.', 'In JavaScript, string interpolation can be achieved using template literals (`${expression}`).']</data>
+      <data key="d1">String Interpolation</data>
+    </node>
+    <node id="JS1.1.2">
+      <data key="d0">['The Number data type represents both integer and floating point numbers in JavaScript.', 'There are also three symbolic values: +Infinity, -Infinity, and NaN.']</data>
+      <data key="d1">Number</data>
+    </node>
+    <node id="JS1.1.2.1">
+      <data key="d0">['Numbers can be manipulated using arithmetic operations like addition (+), subtraction (-), multiplication (*), division (/), etc.', 'There are also various methods and properties available for Number objects.']</data>
+      <data key="d1">Number Manipulation</data>
+    </node>
+    <node id="JS1.1.2.2">
+      <data key="d0">['Numbers can be converted to other data types using methods like toString(), toFixed(), toExponential(), etc.', 'Implicit type coercion can also occur when numbers are used with other data types.']</data>
+      <data key="d1">Number Conversion</data>
+    </node>
+    <node id="JS1.1.3">
+      <data key="d0">['The Boolean data type represents logical entities and can have two values: true or false in JavaScript.']</data>
+      <data key="d1">Boolean</data>
+    </node>
+    <node id="JS1.1.3.1">
+      <data key="d0">['Boolean values can be manipulated using logical operators like AND (&amp;&amp;), OR (||), NOT (!).', 'Boolean values are often used for conditional testing.']</data>
+      <data key="d1">Boolean Operations</data>
+    </node>
+    <node id="JS1.1.3.2">
+      <data key="d0">['In JavaScript, truthy values are values that are considered true when encountered in a Boolean context.', 'Falsy values are values that are considered false when encountered in a Boolean context.']</data>
+      <data key="d1">Truthy and Falsy</data>
+    </node>
+    <node id="JS1.2">
+      <data key="d0">['Non-Primitive data types in JavaScript include Object, Array, and Function.', 'Non-primitive data types are mutable, meaning their values can be changed.', 'Each non-primitive data type has its own syntax and rules for manipulation.']</data>
+      <data key="d1">Non-Primitive Data Types</data>
+    </node>
+    <node id="JS1.2.1">
+      <data key="d0">['An Object is a collection of properties, and a property is an association between a key (or name) and a value in JavaScript.', 'Objects in JavaScript can be created using the object literal syntax ({}) or the new keyword.']</data>
+      <data key="d1">Object</data>
+    </node>
+    <node id="JS1.2.1.1">
+      <data key="d0">['Objects can be manipulated by accessing, adding, modifying, or deleting properties.', "Object methods and 'this' keyword are also essential parts of object manipulation."]</data>
+      <data key="d1">Object Manipulation</data>
+    </node>
+    <node id="JS1.2.1.2">
+      <data key="d0">['Object constructors are used for creating new objects of the same type.', 'The prototype is an object that is associated with every functions and objects by default in JavaScript, and it can be used to define methods and properties that can be inherited by objects.']</data>
+      <data key="d1">Object Constructors and Prototypes</data>
+    </node>
+    <node id="JS1.2.2">
+      <data key="d0">['An Array is a special type of object that represents a collection of elements in JavaScript.', 'Arrays in JavaScript can be created using the array literal syntax ([]) or the Array constructor.']</data>
+      <data key="d1">Array</data>
+    </node>
+    <node id="JS1.2.2.1">
+      <data key="d0">['Arrays can be manipulated using various methods like push(), pop(), shift(), unshift(), splice(), etc.', 'Array methods can change the original array or return a new array.']</data>
+      <data key="d1">Array Manipulation</data>
+    </node>
+    <node id="JS1.2.2.2">
+      <data key="d0">['Arrays can be iterated over using methods like forEach(), map(), filter(), reduce(), etc.', 'These methods can be used to perform operations on each element of the array.']</data>
+      <data key="d1">Array Iteration</data>
+    </node>
+    <node id="JS1.2.3">
+      <data key="d0">['A Function is a set of statements that performs a task or calculates a value in JavaScript.', 'Functions in JavaScript can be created using the function declaration, function expression, or arrow function syntax.']</data>
+      <data key="d1">Function</data>
+    </node>
+    <node id="JS1.2.3.1">
+      <data key="d0">['Functions can be invoked by appending () to the function name.', 'Functions can take parameters and return a value.', 'Function scope and closures are essential parts of function manipulation.']</data>
+      <data key="d1">Function Manipulation</data>
+    </node>
+    <node id="JS1.2.3.2">
+      <data key="d0">['A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed.', 'Promises in JavaScript represent a completion or failure of an asynchronous operation, and can be used to handle asynchronous code.']</data>
+      <data key="d1">Callback Functions and Promises</data>
+    </node>
+    <edge source="JS1" target="JS1.1" />
+    <edge source="JS1" target="JS1.2" />
+    <edge source="JS1.1" target="JS1.1.1" />
+    <edge source="JS1.1" target="JS1.1.2" />
+    <edge source="JS1.1" target="JS1.1.3" />
+    <edge source="JS1.1.1" target="JS1.1.1.1" />
+    <edge source="JS1.1.1" target="JS1.1.1.2" />
+    <edge source="JS1.1.2" target="JS1.1.2.1" />
+    <edge source="JS1.1.2" target="JS1.1.2.2" />
+    <edge source="JS1.1.3" target="JS1.1.3.1" />
+    <edge source="JS1.1.3" target="JS1.1.3.2" />
+    <edge source="JS1.2" target="JS1.2.1" />
+    <edge source="JS1.2" target="JS1.2.2" />
+    <edge source="JS1.2" target="JS1.2.3" />
+    <edge source="JS1.2.1" target="JS1.2.1.1" />
+    <edge source="JS1.2.1" target="JS1.2.1.2" />
+    <edge source="JS1.2.2" target="JS1.2.2.1" />
+    <edge source="JS1.2.2" target="JS1.2.2.2" />
+    <edge source="JS1.2.3" target="JS1.2.3.1" />
+    <edge source="JS1.2.3" target="JS1.2.3.2" />
+  </graph>
+</graphml>
