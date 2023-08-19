@@ -1,0 +1,2915 @@
+{
+    "Syntax": {
+        "nodes": [
+            {
+                "id": "JS1",
+                "name": "Javascript Syntax",
+                "type": "concept"
+            },
+            {
+                "id": "JS1_F_00",
+                "name": "Is a set of rules for writing programs in Javascript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_01",
+                "name": "Defines how Javascript programs are constructed.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1",
+                "name": "Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1_F_00",
+                "name": "Are individual instructions that Javascript can execute.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_01",
+                "name": "Usually end with a semicolon.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1",
+                "name": "Declaration Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1_F_00",
+                "name": "Are used to declare variables.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1_F_01",
+                "name": "Can use \"var\", \"let\", or \"const\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.1",
+                "name": "Var Declarations",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1.1_F_00",
+                "name": "Uses the \"var\" keyword.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.1_F_01",
+                "name": "Variables declared with \"var\" are function scoped.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.2",
+                "name": "Let Declarations",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1.2_F_00",
+                "name": "Uses the \"let\" keyword.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.2_F_01",
+                "name": "Variables declared with \"let\" are block scoped.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.3",
+                "name": "Const Declarations",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1.3_F_00",
+                "name": "Uses the \"const\" keyword.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1.3_F_01",
+                "name": "Variables declared with \"const\" are block scoped and cannot be reassigned.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2",
+                "name": "Expression Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.2_F_00",
+                "name": "Are used to manipulate variables and values.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2_F_01",
+                "name": "Can include operations such as addition, subtraction, multiplication, and division.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3",
+                "name": "Control Flow Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.3_F_00",
+                "name": "Are used to control the flow of execution.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3_F_01",
+                "name": "Include \"if\", \"else\", \"switch\", \"for\", \"while\", and \"do\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4",
+                "name": "Function Declaration Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4_F_00",
+                "name": "Are used to declare functions.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4_F_01",
+                "name": "Include the function keyword, a unique function name, a list of parameters, and a statement block.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5",
+                "name": "Return Statements",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.5_F_00",
+                "name": "Are used to specify the value returned by a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5_F_01",
+                "name": "Include the return keyword followed by the value to be returned.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2",
+                "name": "Keywords",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2_F_00",
+                "name": "Are reserved words in Javascript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_01",
+                "name": "Have special meaning and cannot be used as identifiers.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1",
+                "name": "Control Flow Keywords",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.1_F_00",
+                "name": "Are used to control the flow of execution.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_01",
+                "name": "Include \"if\", \"else\", \"switch\", \"for\", \"while\", and \"do\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2",
+                "name": "Declaration Keywords",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.2_F_00",
+                "name": "Are used to declare variables.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2_F_01",
+                "name": "Include \"var\", \"let\", and \"const\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3",
+                "name": "Function Keyword",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.3_F_00",
+                "name": "Is used to declare a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3_F_01",
+                "name": "Is followed by a unique function name, a list of parameters, and a statement block.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.4",
+                "name": "Return Keyword",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.4_F_00",
+                "name": "Is used to specify the value returned by a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.4_F_01",
+                "name": "Is followed by the value to be returned.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3",
+                "name": "Operators",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3_F_00",
+                "name": "Are used to perform operations on variables and values.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3_F_01",
+                "name": "Include arithmetic, comparison, logical, assignment and bitwise operators.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.1",
+                "name": "Arithmetic Operators",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3.1_F_00",
+                "name": "Are used to perform mathematical operations.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.1_F_01",
+                "name": "Include \"+\", \"-\", \"*\", \"/\", and \"%\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.2",
+                "name": "Assignment Operators",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3.2_F_00",
+                "name": "Are used to assign values to variables.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.2_F_01",
+                "name": "Include \"=\", \"+=\", \"-=\", \"*=\", \"/=\", and \"%=\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4",
+                "name": "Comments",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4_F_00",
+                "name": "Are used to add notes or descriptions within the code.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4_F_01",
+                "name": "Are ignored by the Javascript interpreter.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.1",
+                "name": "Single Line Comments",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4.1_F_00",
+                "name": "Begin with \"//\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.1_F_01",
+                "name": "Only apply to the line they are written on.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.2",
+                "name": "Multi Line Comments",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4.2_F_00",
+                "name": "Begin with \"/*\" and end with \"*/\".",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.2_F_01",
+                "name": "Can span multiple lines.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5",
+                "name": "Data Types",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5_F_00",
+                "name": "Are the types of values that can be manipulated in Javascript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5_F_01",
+                "name": "Include Number, String, Boolean, Null, Undefined, Object, and Symbol.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.1",
+                "name": "Primitive Data Types",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5.1_F_00",
+                "name": "Are the most basic data types in Javascript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.1_F_01",
+                "name": "Include Number, String, Boolean, Null, Undefined, and Symbol.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.2",
+                "name": "Object Data Type",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5.2_F_00",
+                "name": "Is a complex data type that allows for the packaging of code and data together.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.2_F_01",
+                "name": "Can contain properties and methods.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6",
+                "name": "Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.6_F_00",
+                "name": "Are used to execute a block of code a number of times.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6_F_01",
+                "name": "Include \"for\", \"while\", and \"do while\" loops.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7",
+                "name": "Functions",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.7_F_00",
+                "name": "Are blocks of code designed to perform a particular task.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7_F_01",
+                "name": "Are executed when they are invoked (called).",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7.1",
+                "name": "Function Declarations",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.7.1_F_00",
+                "name": "Are used to declare a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7.1_F_01",
+                "name": "Include the function keyword, a unique function name, a list of parameters, and a statement block.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7.2",
+                "name": "Function Invocations",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.7.2_F_00",
+                "name": "Are used to invoke (call) a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.7.2_F_01",
+                "name": "Include the function name followed by a list of arguments in parentheses.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8",
+                "name": "Objects",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.8_F_00",
+                "name": "Are complex data types that allow for the packaging of code and data together.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8_F_01",
+                "name": "Can contain properties and methods.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8.1",
+                "name": "Object Properties",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.8.1_F_00",
+                "name": "Are variables that are used inside the object's methods.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8.1_F_01",
+                "name": "Can be any of the three primitive data types, or any of the abstract data types, such as another object.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8.2",
+                "name": "Object Methods",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.8.2_F_00",
+                "name": "Are functions that let the object do something or let something be done to it.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.8.2_F_01",
+                "name": "Can be referenced by the \"this\" keyword.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.9",
+                "name": "Semicolons",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.9_F_00",
+                "name": "Are used to separate statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.9_F_01",
+                "name": "Are optional in most cases, but best practice is to include them.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.10",
+                "name": "Strict Mode",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.10_F_00",
+                "name": "Is a way to opt in to a restricted variant of JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.10_F_01",
+                "name": "Eliminates some JavaScript silent errors by changing them to throw errors.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.10_F_02",
+                "name": "Can be switched on by adding \"use strict\"; at the beginning of a script or a function.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.11",
+                "name": "Sloppy Mode",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.11_F_00",
+                "name": "Is the default mode of JavaScript before ECMAScript 5.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.11_F_01",
+                "name": "Allows certain actions that are disallowed in strict mode.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.11_F_02",
+                "name": "Can lead to unexpected results because of silent errors.",
+                "type": "feature"
+            }
+        ],
+        "edges": [
+            {
+                "source": "JS1",
+                "target": "JS1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1.1",
+                "target": "JS1.1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1.1",
+                "target": "JS1.1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1.2",
+                "target": "JS1.1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1.2",
+                "target": "JS1.1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1.3",
+                "target": "JS1.1.1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1.3",
+                "target": "JS1.1.1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.5",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.4",
+                "target": "JS1.2.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.4",
+                "target": "JS1.2.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3.1",
+                "target": "JS1.3.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.1",
+                "target": "JS1.3.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3.2",
+                "target": "JS1.3.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.2",
+                "target": "JS1.3.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4.1",
+                "target": "JS1.4.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.1",
+                "target": "JS1.4.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4.2",
+                "target": "JS1.4.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.2",
+                "target": "JS1.4.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.5",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5.1",
+                "target": "JS1.5.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.1",
+                "target": "JS1.5.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5.2",
+                "target": "JS1.5.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.2",
+                "target": "JS1.5.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.6",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.7",
+                "target": "JS1.7_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.7",
+                "target": "JS1.7_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.7",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.7.1",
+                "target": "JS1.7.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.7.1",
+                "target": "JS1.7.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.7",
+                "target": "JS1.7.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.7.2",
+                "target": "JS1.7.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.7.2",
+                "target": "JS1.7.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.7",
+                "target": "JS1.7.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.8",
+                "target": "JS1.8_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.8",
+                "target": "JS1.8_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.8",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.8.1",
+                "target": "JS1.8.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.8.1",
+                "target": "JS1.8.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.8",
+                "target": "JS1.8.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.8.2",
+                "target": "JS1.8.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.8.2",
+                "target": "JS1.8.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.8",
+                "target": "JS1.8.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.9",
+                "target": "JS1.9_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.9",
+                "target": "JS1.9_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.9",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.10",
+                "target": "JS1.10_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.10",
+                "target": "JS1.10_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.10",
+                "target": "JS1.10_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.10",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.11",
+                "target": "JS1.11_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.11",
+                "target": "JS1.11_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.11",
+                "target": "JS1.11_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.11",
+                "type": "concept"
+            }
+        ]
+    },
+    "Data Types": {
+        "nodes": [
+            {
+                "id": "JS1",
+                "name": "JavaScript Data Types",
+                "type": "concept"
+            },
+            {
+                "id": "JS1_F_00",
+                "name": "Exist in JavaScript to classify data for processing",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_01",
+                "name": "Can be divided into primitive and complex types",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_02",
+                "name": "Are used to specify the type of data that can be stored and manipulated within a program",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1",
+                "name": "Primitive Data Types",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1_F_00",
+                "name": "Basic data types provided by JavaScript",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_01",
+                "name": "Include Boolean, Null, Undefined, Number, String, BigInt, and Symbol",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_02",
+                "name": "Immutable, meaning their values cannot be changed",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_03",
+                "name": "Represented directly at the lowest level of the language implementation",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_04",
+                "name": "When assigning a primitive value to a variable or passing it as an argument to a function, its content is copied",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1",
+                "name": "Boolean",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1_F_00",
+                "name": "Represents two values: true or false",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1_F_01",
+                "name": "Used typically for storing yes/no values",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1_F_02",
+                "name": "Syntax: var x = true; or var x = false;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2",
+                "name": "Null",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.2_F_00",
+                "name": "Represents the intentional absence of any object value",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2_F_01",
+                "name": "It is one of JavaScript's primitive values",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2_F_02",
+                "name": "Syntax: var x = null;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3",
+                "name": "Undefined",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.3_F_00",
+                "name": "A variable that has not been assigned a value is of type undefined",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3_F_01",
+                "name": "A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3_F_02",
+                "name": "Syntax: var x;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4",
+                "name": "Number",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4_F_00",
+                "name": "Used to represent numeric values",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4_F_01",
+                "name": "Can be created by literals or as a result of an expression",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4_F_02",
+                "name": "Syntax: var x = 123;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.1",
+                "name": "Integer Numbers",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4.1_F_00",
+                "name": "Represent whole numbers",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.1_F_01",
+                "name": "Can be positive, negative, or zero",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.1_F_02",
+                "name": "Syntax: var x = 123;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.2",
+                "name": "Floating Point Numbers",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4.2_F_00",
+                "name": "Represent numbers with decimal points",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.2_F_01",
+                "name": "Syntax: var x = 123.45;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.3",
+                "name": "Number Literals",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4.3_F_00",
+                "name": "Represent numbers in various bases",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.3_F_01",
+                "name": "Includes binary (base 2), octal (base 8), and decimal (base 10)",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4.3_F_02",
+                "name": "Syntax: var x = 0b11; (binary), var y = 0o10; (octal), var z = 35; (decimal)",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5",
+                "name": "String",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.5_F_00",
+                "name": "Used to represent textual data",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5_F_01",
+                "name": "It is a set of 'elements' of 16-bit unsigned integer values",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5_F_02",
+                "name": "Syntax: var x = 'text';",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5.1",
+                "name": "Single Character String",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.5.1_F_00",
+                "name": "Represents a single character",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5.1_F_01",
+                "name": "Syntax: var x = 'a';",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5.2",
+                "name": "Multi-character String",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.5.2_F_00",
+                "name": "Represents a sequence of characters",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.5.2_F_01",
+                "name": "Syntax: var x = 'Hello World';",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.6",
+                "name": "BigInt",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.6_F_00",
+                "name": "An integer with arbitrary precision",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.6_F_01",
+                "name": "Can store large integers beyond the safe integer limit for Number",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.6_F_02",
+                "name": "Syntax: var x = 123n;",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.7",
+                "name": "Symbol",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.7_F_00",
+                "name": "A unique and immutable primitive value",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.7_F_01",
+                "name": "Often used as the key for an object property when the property is intended to be private for internal use within a class or object",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.7_F_02",
+                "name": "Syntax: var x = Symbol('description');",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2",
+                "name": "Complex Data Types",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2_F_00",
+                "name": "Types that aggregate multiple values into a single entity",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_01",
+                "name": "Include Object, Array, and Function",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_02",
+                "name": "When assigning a complex value to a variable or passing it as an argument to a function, the reference is copied, not the content",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1",
+                "name": "Object",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.1_F_00",
+                "name": "A non-primitive data type",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_01",
+                "name": "Allows for the grouping of primitive and complex data types into a dynamic collection",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_02",
+                "name": "Can contain properties and methods",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_03",
+                "name": "Syntax: var x = {property1: 'value1', property2: 'value2'};",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1.1",
+                "name": "Object Properties",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.1.1_F_00",
+                "name": "Represent values that are associated with an object",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1.1_F_01",
+                "name": "Syntax: var x = {property1: 'value1', property2: 'value2'};",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1.2",
+                "name": "Object Methods",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.1.2_F_00",
+                "name": "Represent functions that are associated with an object",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1.2_F_01",
+                "name": "Syntax: var x = {property1: 'value1', property2: 'value2', method1: function() { // do something }};",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2",
+                "name": "Array",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.2_F_00",
+                "name": "A special variable, which can hold more than one value at a time",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2_F_01",
+                "name": "Can hold numbers, strings, objects, other arrays, etc.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2_F_02",
+                "name": "Syntax: var x = [value1, value2, value3];",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2.1",
+                "name": "Single Element Array",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.2.1_F_00",
+                "name": "Represents an array with a single element",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2.1_F_01",
+                "name": "Syntax: var x = [value1];",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2.2",
+                "name": "Multi-element Array",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.2.2_F_00",
+                "name": "Represents an array with multiple elements",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2.2_F_01",
+                "name": "Syntax: var x = [value1, value2, value3];",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3",
+                "name": "Function",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.3_F_00",
+                "name": "A set of statements that performs a task or calculates a value",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3_F_01",
+                "name": "Can be defined using function keyword",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3_F_02",
+                "name": "Syntax: function name(parameters) {statements}",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3.1",
+                "name": "Function without parameters",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.3.1_F_00",
+                "name": "Represents a function that does not take any arguments",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3.1_F_01",
+                "name": "Syntax: function name() {statements}",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3.2",
+                "name": "Function with parameters",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.3.2_F_00",
+                "name": "Represents a function that takes one or more arguments",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.3.2_F_01",
+                "name": "Syntax: function name(parameters) {statements}",
+                "type": "feature"
+            }
+        ],
+        "edges": [
+            {
+                "source": "JS1",
+                "target": "JS1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_04",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4.1",
+                "target": "JS1.1.4.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4.1",
+                "target": "JS1.1.4.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4.1",
+                "target": "JS1.1.4.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4.2",
+                "target": "JS1.1.4.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4.2",
+                "target": "JS1.1.4.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4.3",
+                "target": "JS1.1.4.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4.3",
+                "target": "JS1.1.4.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4.3",
+                "target": "JS1.1.4.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.5",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.5.1",
+                "target": "JS1.1.5.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5.1",
+                "target": "JS1.1.5.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.5.2",
+                "target": "JS1.1.5.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5.2",
+                "target": "JS1.1.5.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.5",
+                "target": "JS1.1.5.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.6",
+                "target": "JS1.1.6_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.6",
+                "target": "JS1.1.6_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.6",
+                "target": "JS1.1.6_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.6",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.7",
+                "target": "JS1.1.7_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.7",
+                "target": "JS1.1.7_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.7",
+                "target": "JS1.1.7_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.7",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.1.1",
+                "target": "JS1.2.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1.1",
+                "target": "JS1.2.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.1.2",
+                "target": "JS1.2.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1.2",
+                "target": "JS1.2.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.2.1",
+                "target": "JS1.2.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2.1",
+                "target": "JS1.2.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.2.2",
+                "target": "JS1.2.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2.2",
+                "target": "JS1.2.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.3.1",
+                "target": "JS1.2.3.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3.1",
+                "target": "JS1.2.3.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.3.2",
+                "target": "JS1.2.3.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3.2",
+                "target": "JS1.2.3.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.3",
+                "target": "JS1.2.3.2",
+                "type": "concept"
+            }
+        ]
+    },
+    "Loops": {
+        "nodes": [
+            {
+                "id": "JS1",
+                "name": "Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1_F_00",
+                "name": "Loops are a programming feature that allows a set of instructions to be executed repeatedly.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_01",
+                "name": "Loops in JavaScript include for, while, do...while, for...in, and for...of loops.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_02",
+                "name": "Each loop has a different syntax and use case.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_03",
+                "name": "Loops are used to reduce the number of lines in a program.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1_F_04",
+                "name": "Loops continue to execute as long as a certain condition is met.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1",
+                "name": "For Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1_F_00",
+                "name": "A for loop repeats until a specified condition evaluates to false.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_01",
+                "name": "The syntax of a for loop includes initialization, condition, and iteration expression.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_02",
+                "name": "The initialization, condition, and iteration expression are separated by semicolons in a for loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1_F_03",
+                "name": "The for loop is the most compact form of looping in JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1",
+                "name": "Initialization in For Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.1_F_00",
+                "name": "Initialization is the starting point of a for loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1_F_01",
+                "name": "It is where we define and set up our loop variable.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.1_F_02",
+                "name": "The initialization statement is executed before the loop begins.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2",
+                "name": "Condition in For Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.2_F_00",
+                "name": "The condition is evaluated before each loop iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2_F_01",
+                "name": "If the condition is true, the loop will start over again, if it is false, the loop will end.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.2_F_02",
+                "name": "The condition tests if a given condition is true or not.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3",
+                "name": "Iteration Expression in For Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.3_F_00",
+                "name": "The iteration expression is invoked after each loop iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3_F_01",
+                "name": "It is typically used to update the loop counter.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.3_F_02",
+                "name": "The iteration statement can increase or decrease the counter.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4",
+                "name": "Body of For Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.1.4_F_00",
+                "name": "The body of the for loop contains statements that are executed for each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4_F_01",
+                "name": "The body of the for loop is enclosed in curly braces {}.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.1.4_F_02",
+                "name": "The body of the for loop can include multiple statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2",
+                "name": "While Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2_F_00",
+                "name": "A while loop repeats as long as a specified condition is true.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_01",
+                "name": "The syntax of a while loop includes a condition only.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_02",
+                "name": "The while loop executes a statement or code block repeatedly as long as an expression is true.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2_F_03",
+                "name": "Once the expression becomes false, the while loop terminates.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1",
+                "name": "Condition in While Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.1_F_00",
+                "name": "The condition in a while loop is evaluated before each loop iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_01",
+                "name": "If the condition is true, the loop will start over again, if it is false, the loop will end.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.1_F_02",
+                "name": "The condition tests if a given condition is true or not.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2",
+                "name": "Body of While Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.2.2_F_00",
+                "name": "The body of the while loop contains statements that are executed for each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2_F_01",
+                "name": "The body of the while loop is enclosed in curly braces {}.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.2.2_F_02",
+                "name": "The body of the while loop can include multiple statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3",
+                "name": "Do...While Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3_F_00",
+                "name": "A do...while loop is similar to a while loop, except that it tests the condition at the end of the loop body.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3_F_01",
+                "name": "This type of loop will execute the loop body once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3_F_02",
+                "name": "The do...while loop guarantees that the loop body is executed at least once.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.1",
+                "name": "Condition in Do...While Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3.1_F_00",
+                "name": "The condition in a do...while loop is evaluated after each loop iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.1_F_01",
+                "name": "If the condition is true, the loop will start over again, if it is false, the loop will end.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.1_F_02",
+                "name": "The condition tests if a given condition is true or not.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.2",
+                "name": "Body of Do...While Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.3.2_F_00",
+                "name": "The body of the do...while loop contains statements that are executed for each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.2_F_01",
+                "name": "The body of the do...while loop is enclosed in curly braces {}.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.3.2_F_02",
+                "name": "The body of the do...while loop can include multiple statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4",
+                "name": "For...In Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4_F_00",
+                "name": "A for...in loop is used to loop through an object's properties.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4_F_01",
+                "name": "The syntax of a for...in loop includes a variable name and an object.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4_F_02",
+                "name": "In each iteration, one property from the object is assigned to the variable name and this loop continues until all the properties of the object are exhausted.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.1",
+                "name": "Variable Name in For...In Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4.1_F_00",
+                "name": "The variable name in a for...in loop is the variable to which each property from the object is assigned during each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.1_F_01",
+                "name": "The variable name is defined within the parentheses of the for...in loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.2",
+                "name": "Object in For...In Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4.2_F_00",
+                "name": "The object in a for...in loop is the object whose properties are being looped through.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.2_F_01",
+                "name": "The object is defined within the parentheses of the for...in loop, after the variable name.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.3",
+                "name": "Body of For...In Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.4.3_F_00",
+                "name": "The body of the for...in loop contains statements that are executed for each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.3_F_01",
+                "name": "The body of the for...in loop is enclosed in curly braces {}.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.4.3_F_02",
+                "name": "The body of the for...in loop can include multiple statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5",
+                "name": "For...Of Loops in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5_F_00",
+                "name": "A for...of loop iterates over any iterable \u2013 a data container that supports the iteration protocol.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5_F_01",
+                "name": "Each iterated value is stored in a variable, as specified in the head of the for...of loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5_F_02",
+                "name": "The syntax of a for...of loop includes an iteration variable and an iterable.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.1",
+                "name": "Iteration Variable in For...Of Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5.1_F_00",
+                "name": "The iteration variable in a for...of loop is the variable to which each iterated value is assigned during each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.1_F_01",
+                "name": "The iteration variable is defined within the parentheses of the for...of loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.2",
+                "name": "Iterable in For...Of Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5.2_F_00",
+                "name": "The iterable in a for...of loop is the data container that is being looped through.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.2_F_01",
+                "name": "The iterable is defined within the parentheses of the for...of loop, after the iteration variable.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.3",
+                "name": "Body of For...Of Loops",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.5.3_F_00",
+                "name": "The body of the for...of loop contains statements that are executed for each iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.3_F_01",
+                "name": "The body of the for...of loop is enclosed in curly braces {}.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.5.3_F_02",
+                "name": "The body of the for...of loop can include multiple statements.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6",
+                "name": "Loop Control in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.6_F_00",
+                "name": "Loop control statements change the execution from its normal sequence.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6_F_01",
+                "name": "JavaScript supports two types of loop control statements: break and continue.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6_F_02",
+                "name": "The break statement terminates the loop and transfers execution to the statement immediately following the loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6_F_03",
+                "name": "The continue statement skips the rest of the loop and continues with the next iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.1",
+                "name": "Break Statement in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.6.1_F_00",
+                "name": "The break statement is used to exit a loop early, breaking out of the enclosing curly braces.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.1_F_01",
+                "name": "When a break statement is encountered, the program flow moves to the statement immediately following the loop.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.1_F_02",
+                "name": "The break statement can be used with any loop in JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.2",
+                "name": "Continue Statement in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.6.2_F_00",
+                "name": "The continue statement skips the rest of the loop and continues with the next iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.2_F_01",
+                "name": "When a continue statement is encountered, the program flow moves to the loop check expression immediately and if the condition remains true, it starts the next iteration.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.2_F_02",
+                "name": "The continue statement can be used with any loop in JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.3",
+                "name": "Labels in JavaScript",
+                "type": "concept"
+            },
+            {
+                "id": "JS1.6.3_F_00",
+                "name": "Labels are used in conjunction with break and continue to control the flow more precisely.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.3_F_01",
+                "name": "A label is simply an identifier followed by a colon (:) that is applied to a statement or a block of code.",
+                "type": "feature"
+            },
+            {
+                "id": "JS1.6.3_F_02",
+                "name": "Line breaks are not allowed between the \u2018continue\u2019 or \u2018break\u2019 statement and its label name. Also, there should not be any other statement in between a label name and associated loop.",
+                "type": "feature"
+            }
+        ],
+        "edges": [
+            {
+                "source": "JS1",
+                "target": "JS1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1_F_04",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.1",
+                "target": "JS1.1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.2",
+                "target": "JS1.1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.3",
+                "target": "JS1.1.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1.4",
+                "target": "JS1.1.4_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.1",
+                "target": "JS1.1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.1",
+                "target": "JS1.2.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2.2",
+                "target": "JS1.2.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.2",
+                "target": "JS1.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3.1",
+                "target": "JS1.3.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.1",
+                "target": "JS1.3.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.1",
+                "target": "JS1.3.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.3.2",
+                "target": "JS1.3.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.2",
+                "target": "JS1.3.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3.2",
+                "target": "JS1.3.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.3",
+                "target": "JS1.3.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4.1",
+                "target": "JS1.4.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.1",
+                "target": "JS1.4.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4.2",
+                "target": "JS1.4.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.2",
+                "target": "JS1.4.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.4.3",
+                "target": "JS1.4.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.3",
+                "target": "JS1.4.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4.3",
+                "target": "JS1.4.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.4",
+                "target": "JS1.4.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.5",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5.1",
+                "target": "JS1.5.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.1",
+                "target": "JS1.5.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5.2",
+                "target": "JS1.5.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.2",
+                "target": "JS1.5.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.5.3",
+                "target": "JS1.5.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.3",
+                "target": "JS1.5.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5.3",
+                "target": "JS1.5.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.5",
+                "target": "JS1.5.3",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JS1",
+                "target": "JS1.6",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.6.1",
+                "target": "JS1.6.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.1",
+                "target": "JS1.6.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.1",
+                "target": "JS1.6.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6.1",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.6.2",
+                "target": "JS1.6.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.2",
+                "target": "JS1.6.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.2",
+                "target": "JS1.6.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6.2",
+                "type": "concept"
+            },
+            {
+                "source": "JS1.6.3",
+                "target": "JS1.6.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.3",
+                "target": "JS1.6.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6.3",
+                "target": "JS1.6.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JS1.6",
+                "target": "JS1.6.3",
+                "type": "concept"
+            }
+        ]
+    }
+}

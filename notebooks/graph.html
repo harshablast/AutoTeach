@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 600px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1", "label": "Javascript Syntax", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1_F_00", "label": "Is a set of rules for writing programs in Javascript.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1_F_01", "label": "Defines how Javascript programs are constructed.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1", "label": "Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1_F_00", "label": "Are individual instructions that Javascript can execute.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1_F_01", "label": "Usually end with a semicolon.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.1", "label": "Declaration Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1_F_00", "label": "Are used to declare variables.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1_F_01", "label": "Can use \"var\", \"let\", or \"const\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.1.1", "label": "Var Declarations", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.1_F_00", "label": "Uses the \"var\" keyword.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.1_F_01", "label": "Variables declared with \"var\" are function scoped.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.1.2", "label": "Let Declarations", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.2_F_00", "label": "Uses the \"let\" keyword.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.2_F_01", "label": "Variables declared with \"let\" are block scoped.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.1.3", "label": "Const Declarations", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.3_F_00", "label": "Uses the \"const\" keyword.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.1.3_F_01", "label": "Variables declared with \"const\" are block scoped and cannot be reassigned.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.2", "label": "Expression Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.2_F_00", "label": "Are used to manipulate variables and values.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.2_F_01", "label": "Can include operations such as addition, subtraction, multiplication, and division.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.3", "label": "Control Flow Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.3_F_00", "label": "Are used to control the flow of execution.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.3_F_01", "label": "Include \"if\", \"else\", \"switch\", \"for\", \"while\", and \"do\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.4", "label": "Function Declaration Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.4_F_00", "label": "Are used to declare functions.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.4_F_01", "label": "Include the function keyword, a unique function name, a list of parameters, and a statement block.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.1.5", "label": "Return Statements", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.5_F_00", "label": "Are used to specify the value returned by a function.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.1.5_F_01", "label": "Include the return keyword followed by the value to be returned.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.2", "label": "Keywords", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2_F_00", "label": "Are reserved words in Javascript.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2_F_01", "label": "Have special meaning and cannot be used as identifiers.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.2.1", "label": "Control Flow Keywords", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.1_F_00", "label": "Are used to control the flow of execution.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.1_F_01", "label": "Include \"if\", \"else\", \"switch\", \"for\", \"while\", and \"do\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.2.2", "label": "Declaration Keywords", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.2_F_00", "label": "Are used to declare variables.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.2_F_01", "label": "Include \"var\", \"let\", and \"const\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.2.3", "label": "Function Keyword", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.3_F_00", "label": "Is used to declare a function.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.3_F_01", "label": "Is followed by a unique function name, a list of parameters, and a statement block.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.2.4", "label": "Return Keyword", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.4_F_00", "label": "Is used to specify the value returned by a function.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.2.4_F_01", "label": "Is followed by the value to be returned.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.3", "label": "Operators", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3_F_00", "label": "Are used to perform operations on variables and values.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3_F_01", "label": "Include arithmetic, comparison, logical, assignment and bitwise operators.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.3.1", "label": "Arithmetic Operators", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3.1_F_00", "label": "Are used to perform mathematical operations.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3.1_F_01", "label": "Include \"+\", \"-\", \"*\", \"/\", and \"%\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.3.2", "label": "Assignment Operators", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3.2_F_00", "label": "Are used to assign values to variables.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.3.2_F_01", "label": "Include \"=\", \"+=\", \"-=\", \"*=\", \"/=\", and \"%=\".", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.4", "label": "Comments", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4_F_00", "label": "Are used to add notes or descriptions within the code.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4_F_01", "label": "Are ignored by the Javascript interpreter.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.4.1", "label": "Single Line Comments", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4.1_F_00", "label": "Begin with \"//\".", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4.1_F_01", "label": "Only apply to the line they are written on.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.4.2", "label": "Multi Line Comments", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4.2_F_00", "label": "Begin with \"/*\" and end with \"*/\".", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.4.2_F_01", "label": "Can span multiple lines.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.5", "label": "Data Types", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5_F_00", "label": "Are the types of values that can be manipulated in Javascript.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5_F_01", "label": "Include Number, String, Boolean, Null, Undefined, Object, and Symbol.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.5.1", "label": "Primitive Data Types", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5.1_F_00", "label": "Are the most basic data types in Javascript.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5.1_F_01", "label": "Include Number, String, Boolean, Null, Undefined, and Symbol.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.5.2", "label": "Object Data Type", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5.2_F_00", "label": "Is a complex data type that allows for the packaging of code and data together.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.5.2_F_01", "label": "Can contain properties and methods.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.6", "label": "Loops", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.6_F_00", "label": "Are used to execute a block of code a number of times.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.6_F_01", "label": "Include \"for\", \"while\", and \"do while\" loops.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.7", "label": "Functions", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7_F_00", "label": "Are blocks of code designed to perform a particular task.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7_F_01", "label": "Are executed when they are invoked (called).", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.7.1", "label": "Function Declarations", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7.1_F_00", "label": "Are used to declare a function.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7.1_F_01", "label": "Include the function keyword, a unique function name, a list of parameters, and a statement block.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.7.2", "label": "Function Invocations", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7.2_F_00", "label": "Are used to invoke (call) a function.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.7.2_F_01", "label": "Include the function name followed by a list of arguments in parentheses.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.8", "label": "Objects", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8_F_00", "label": "Are complex data types that allow for the packaging of code and data together.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8_F_01", "label": "Can contain properties and methods.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.8.1", "label": "Object Properties", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8.1_F_00", "label": "Are variables that are used inside the object\u0027s methods.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8.1_F_01", "label": "Can be any of the three primitive data types, or any of the abstract data types, such as another object.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.8.2", "label": "Object Methods", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8.2_F_00", "label": "Are functions that let the object do something or let something be done to it.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.8.2_F_01", "label": "Can be referenced by the \"this\" keyword.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.9", "label": "Semicolons", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.9_F_00", "label": "Are used to separate statements.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.9_F_01", "label": "Are optional in most cases, but best practice is to include them.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.10", "label": "Strict Mode", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.10_F_00", "label": "Is a way to opt in to a restricted variant of JavaScript.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.10_F_01", "label": "Eliminates some JavaScript silent errors by changing them to throw errors.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.10_F_02", "label": "Can be switched on by adding \"use strict\"; at the beginning of a script or a function.", "mass": 2, "shape": "text"}, {"color": "#FBBC05", "font": "24 sans-serif #000000", "id": "JS1.11", "label": "Sloppy Mode", "mass": 12, "shape": "ellipse"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.11_F_00", "label": "Is the default mode of JavaScript before ECMAScript 5.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.11_F_01", "label": "Allows certain actions that are disallowed in strict mode.", "mass": 2, "shape": "text"}, {"color": "#575DFB", "font": "16 sans-serif #575DFB", "id": "JS1.11_F_02", "label": "Can lead to unexpected results because of silent errors.", "mass": 2, "shape": "text"}]);
+                  edges = new vis.DataSet([{"color": "#575DFB", "from": "JS1", "length": 2, "to": "JS1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1", "length": 2, "to": "JS1_F_01", "width": 2}, {"color": "#575DFB", "from": "JS1.1", "length": 2, "to": "JS1.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1", "length": 2, "to": "JS1.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.1", "width": 1}, {"color": "#575DFB", "from": "JS1.1.1", "length": 2, "to": "JS1.1.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.1", "length": 2, "to": "JS1.1.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1", "length": 18, "to": "JS1.1.1", "width": 1}, {"color": "#575DFB", "from": "JS1.1.1.1", "length": 2, "to": "JS1.1.1.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.1.1", "length": 2, "to": "JS1.1.1.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1.1", "length": 18, "to": "JS1.1.1.1", "width": 1}, {"color": "#575DFB", "from": "JS1.1.1.2", "length": 2, "to": "JS1.1.1.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.1.2", "length": 2, "to": "JS1.1.1.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1.1", "length": 18, "to": "JS1.1.1.2", "width": 1}, {"color": "#575DFB", "from": "JS1.1.1.3", "length": 2, "to": "JS1.1.1.3_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.1.3", "length": 2, "to": "JS1.1.1.3_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1.1", "length": 18, "to": "JS1.1.1.3", "width": 1}, {"color": "#575DFB", "from": "JS1.1.2", "length": 2, "to": "JS1.1.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.2", "length": 2, "to": "JS1.1.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1", "length": 18, "to": "JS1.1.2", "width": 1}, {"color": "#575DFB", "from": "JS1.1.3", "length": 2, "to": "JS1.1.3_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.3", "length": 2, "to": "JS1.1.3_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1", "length": 18, "to": "JS1.1.3", "width": 1}, {"color": "#575DFB", "from": "JS1.1.4", "length": 2, "to": "JS1.1.4_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.4", "length": 2, "to": "JS1.1.4_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1", "length": 18, "to": "JS1.1.4", "width": 1}, {"color": "#575DFB", "from": "JS1.1.5", "length": 2, "to": "JS1.1.5_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.1.5", "length": 2, "to": "JS1.1.5_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.1", "length": 18, "to": "JS1.1.5", "width": 1}, {"color": "#575DFB", "from": "JS1.2", "length": 2, "to": "JS1.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.2", "length": 2, "to": "JS1.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.2", "width": 1}, {"color": "#575DFB", "from": "JS1.2.1", "length": 2, "to": "JS1.2.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.2.1", "length": 2, "to": "JS1.2.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.2", "length": 18, "to": "JS1.2.1", "width": 1}, {"color": "#575DFB", "from": "JS1.2.2", "length": 2, "to": "JS1.2.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.2.2", "length": 2, "to": "JS1.2.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.2", "length": 18, "to": "JS1.2.2", "width": 1}, {"color": "#575DFB", "from": "JS1.2.3", "length": 2, "to": "JS1.2.3_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.2.3", "length": 2, "to": "JS1.2.3_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.2", "length": 18, "to": "JS1.2.3", "width": 1}, {"color": "#575DFB", "from": "JS1.2.4", "length": 2, "to": "JS1.2.4_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.2.4", "length": 2, "to": "JS1.2.4_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.2", "length": 18, "to": "JS1.2.4", "width": 1}, {"color": "#575DFB", "from": "JS1.3", "length": 2, "to": "JS1.3_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.3", "length": 2, "to": "JS1.3_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.3", "width": 1}, {"color": "#575DFB", "from": "JS1.3.1", "length": 2, "to": "JS1.3.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.3.1", "length": 2, "to": "JS1.3.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.3", "length": 18, "to": "JS1.3.1", "width": 1}, {"color": "#575DFB", "from": "JS1.3.2", "length": 2, "to": "JS1.3.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.3.2", "length": 2, "to": "JS1.3.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.3", "length": 18, "to": "JS1.3.2", "width": 1}, {"color": "#575DFB", "from": "JS1.4", "length": 2, "to": "JS1.4_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.4", "length": 2, "to": "JS1.4_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.4", "width": 1}, {"color": "#575DFB", "from": "JS1.4.1", "length": 2, "to": "JS1.4.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.4.1", "length": 2, "to": "JS1.4.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.4", "length": 18, "to": "JS1.4.1", "width": 1}, {"color": "#575DFB", "from": "JS1.4.2", "length": 2, "to": "JS1.4.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.4.2", "length": 2, "to": "JS1.4.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.4", "length": 18, "to": "JS1.4.2", "width": 1}, {"color": "#575DFB", "from": "JS1.5", "length": 2, "to": "JS1.5_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.5", "length": 2, "to": "JS1.5_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.5", "width": 1}, {"color": "#575DFB", "from": "JS1.5.1", "length": 2, "to": "JS1.5.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.5.1", "length": 2, "to": "JS1.5.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.5", "length": 18, "to": "JS1.5.1", "width": 1}, {"color": "#575DFB", "from": "JS1.5.2", "length": 2, "to": "JS1.5.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.5.2", "length": 2, "to": "JS1.5.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.5", "length": 18, "to": "JS1.5.2", "width": 1}, {"color": "#575DFB", "from": "JS1.6", "length": 2, "to": "JS1.6_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.6", "length": 2, "to": "JS1.6_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.6", "width": 1}, {"color": "#575DFB", "from": "JS1.7", "length": 2, "to": "JS1.7_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.7", "length": 2, "to": "JS1.7_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.7", "width": 1}, {"color": "#575DFB", "from": "JS1.7.1", "length": 2, "to": "JS1.7.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.7.1", "length": 2, "to": "JS1.7.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.7", "length": 18, "to": "JS1.7.1", "width": 1}, {"color": "#575DFB", "from": "JS1.7.2", "length": 2, "to": "JS1.7.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.7.2", "length": 2, "to": "JS1.7.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.7", "length": 18, "to": "JS1.7.2", "width": 1}, {"color": "#575DFB", "from": "JS1.8", "length": 2, "to": "JS1.8_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.8", "length": 2, "to": "JS1.8_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.8", "width": 1}, {"color": "#575DFB", "from": "JS1.8.1", "length": 2, "to": "JS1.8.1_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.8.1", "length": 2, "to": "JS1.8.1_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.8", "length": 18, "to": "JS1.8.1", "width": 1}, {"color": "#575DFB", "from": "JS1.8.2", "length": 2, "to": "JS1.8.2_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.8.2", "length": 2, "to": "JS1.8.2_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1.8", "length": 18, "to": "JS1.8.2", "width": 1}, {"color": "#575DFB", "from": "JS1.9", "length": 2, "to": "JS1.9_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.9", "length": 2, "to": "JS1.9_F_01", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.9", "width": 1}, {"color": "#575DFB", "from": "JS1.10", "length": 2, "to": "JS1.10_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.10", "length": 2, "to": "JS1.10_F_01", "width": 2}, {"color": "#575DFB", "from": "JS1.10", "length": 2, "to": "JS1.10_F_02", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.10", "width": 1}, {"color": "#575DFB", "from": "JS1.11", "length": 2, "to": "JS1.11_F_00", "width": 2}, {"color": "#575DFB", "from": "JS1.11", "length": 2, "to": "JS1.11_F_01", "width": 2}, {"color": "#575DFB", "from": "JS1.11", "length": 2, "to": "JS1.11_F_02", "width": 2}, {"color": "#FBBC05", "from": "JS1", "length": 18, "to": "JS1.11", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

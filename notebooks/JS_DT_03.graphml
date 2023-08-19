@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="edge" attr.name="color" attr.type="string" />
+  <key id="d0" for="node" attr.name="color" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="JS01">
+      <data key="d0">blue</data>
+    </node>
+    <node id="JavaScript has dynamic types.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Data types are the classifications of data which tells the compiler or interpreter how the programmer intends to use the data.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Primitive data types are pre-defined by the language, are immutable and have no methods.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Primitive types in JavaScript include: String, Number, Boolean, Null, Undefined, BigInt, and Symbol.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Non-primitive data types are mutable and can be manipulated.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Non-primitive types in JavaScript include: Object, Array, and Function.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="String is a sequence of characters.">
+      <data key="d0">green</data>
+    </node>
+    <node id="In JavaScript, strings are enclosed within quotes (either single, double, or backticks).">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Number represents numeric values.">
+      <data key="d0">green</data>
+    </node>
+    <node id="It includes integers, floats, positive numbers, negative numbers, etc.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JavaScript provides several functions to manipulate numbers, such as toString() and valueOf().">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Boolean represents logical entities.">
+      <data key="d0">green</data>
+    </node>
+    <node id="It can only have two values: true or false.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JavaScript provides comparison operators that return Boolean values.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Objects are instances which contain a set of key-value pairs.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The keys (also known as properties) are string identifiers, while the values can be any data type, including other objects.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JavaScript objects can be user-defined.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="An array is a special type of object that represents a collection of similar type of elements.">
+      <data key="d0">green</data>
+    </node>
+    <node id="In JavaScript, arrays are zero-indexed: the first element is at index 0.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="A function is a set of statements that performs a specific task.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Functions in JavaScript are objects, and can be stored in variables, passed as arguments to other functions, and created within and returned from functions.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.2.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The Number object in JavaScript represents numerical date, either integers or floating-point numbers.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The syntax for creating a number object is: var val = new Number(number);">
+      <data key="d0">green</data>
+    </node>
+    <node id="If a non-number argument is provided, the argument cannot be converted into a number, it returns NaN (Not-a-Number).">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.2.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Number properties in JavaScript include MAX_VALUE, MIN_VALUE, NaN, NEGATIVE_INFINITY, POSITIVE_INFINITY, prototype, and constructor.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Each property has a specific meaning and use.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.3.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="JavaScript supports several comparison operators that return Boolean values.">
+      <data key="d0">green</data>
+    </node>
+    <node id="These include == (Equal), != (Not Equal), &gt; (Greater than), etc.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.1.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="In JavaScript, objects can be user-defined using the function keyword.">
+      <data key="d0">green</data>
+    </node>
+    <node id="User-defined objects can have properties and methods.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.2.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The Array object in JavaScript lets you store multiple values in a single variable.">
+      <data key="d0">green</data>
+    </node>
+    <node id="It stores a fixed-size sequential collection of elements of the same type.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The syntax for creating an Array object is: var fruits = new Array( &quot;apple&quot;, &quot;orange&quot;, &quot;mango&quot; );">
+      <data key="d0">green</data>
+    </node>
+    <node id="Elements in an array are accessed by their index.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.2.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Array properties in JavaScript include constructor and index.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Functions in JavaScript are defined using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The syntax for defining a function is function functionname(parameter-list) { statements }.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Functions in JavaScript are called by using the function name followed by a list of arguments enclosed in parentheses.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The syntax for calling a function is functionname(argument-list).">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Functions in JavaScript can be reusable, meaning they can be called multiple times within the program.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Reusability of functions eliminates the need of writing the same code again and again.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.1.1">
+      <data key="d0">blue</data>
+    </node>
+    <node id="A string literal in JavaScript is zero or more characters enclosed in single (') or double (&quot;) quotes.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Backticks (`) can also be used to define a string literal in JavaScript.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.2.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Arithmetic operators are used to perform arithmetic on numbers.">
+      <data key="d0">green</data>
+    </node>
+    <node id="These include + (Addition), - (Subtraction), * (Multiplication), / (Division), etc.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Null is a special keyword in JavaScript that represents no value or no object.">
+      <data key="d0">green</data>
+    </node>
+    <node id="It is not the same as an empty string (&quot;&quot;) or 0, it is a JavaScript keyword.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.5">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Undefined in JavaScript means a variable has been declared but has not yet been assigned a value.">
+      <data key="d0">green</data>
+    </node>
+    <node id="It is not the same as an empty string (&quot;&quot;) or null, it is a JavaScript keyword.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.6">
+      <data key="d0">blue</data>
+    </node>
+    <node id="BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53 - 1.">
+      <data key="d0">green</data>
+    </node>
+    <node id="BigInt can be used when you need to reliably store and operate on large integers beyond the safe integer limit for Numbers.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.7">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Symbol is a built-in object in JavaScript whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that’s unique and immutable.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Symbols are often used to create private object members.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.1.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="A constructor is a function that creates and initializes an object. JavaScript provides a special constructor function called Object() to build the object.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The return value of the Object() constructor is assigned to a variable. The variable contains a reference to the new object.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.1.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The prototype property allows you to add properties and methods to any object.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Prototype is a global property which is available with almost all the objects.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.2.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The Array constructor in JavaScript is used to create Array objects.">
+      <data key="d0">green</data>
+    </node>
+    <node id="The syntax for creating an Array object is: var arrayName = new Array(element0, element1, ..., elementN);">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.1.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The String object in JavaScript is used to represent and manipulate a sequence of characters.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Strings are useful for holding data that can be represented in text format.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.1.3">
+      <data key="d0">blue</data>
+    </node>
+    <node id="String properties in JavaScript include length and prototype.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.3.2">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Logical operators are used to determine the logic between variables or values.">
+      <data key="d0">green</data>
+    </node>
+    <node id="These include &amp;&amp; (and), || (or), and ! (not).">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The Function constructor in JavaScript creates a new Function object.">
+      <data key="d0">green</data>
+    </node>
+    <node id="In JavaScript, function body (the code inside) is not compiled during the build, but is translated on-the-fly, so it can be changed at run-time.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.1.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="String methods in JavaScript include charAt(), charCodeAt(), concat(), indexOf(), lastIndexOf(), localeCompare(), match(), replace(), search(), slice(), split(), substr(), substring(), toLocaleLowerCase(), toLocaleUpperCase(), toLowerCase(), toString(), toUpperCase(), trim(), valueOf().">
+      <data key="d0">green</data>
+    </node>
+    <node id="Each method has a specific meaning and use.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.1.2.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Number methods in JavaScript include toExponential(), toFixed(), toLocaleString(), toPrecision(), toString(), valueOf().">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.1.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Object methods in JavaScript include hasOwnProperty(), isPrototypeOf(), propertyIsEnumerable(), toLocaleString(), toString(), valueOf().">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.2.4">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Array methods in JavaScript include concat(), every(), filter(), forEach(), indexOf(), isArray(), join(), lastIndexOf(), map(), pop(), push(), reduce(), reduceRight(), reverse(), shift(), slice(), some(), sort(), splice(), toString(), unshift().">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.5">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Function methods in JavaScript include apply(), call(), toString().">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.6">
+      <data key="d0">blue</data>
+    </node>
+    <node id="Function parameters are the names listed in the function definition.">
+      <data key="d0">green</data>
+    </node>
+    <node id="Function arguments are the real values received by the function when it is invoked.">
+      <data key="d0">green</data>
+    </node>
+    <node id="JS01.2.3.7">
+      <data key="d0">blue</data>
+    </node>
+    <node id="The return statement stops the execution of a function and returns a value from that function.">
+      <data key="d0">green</data>
+    </node>
+    <node id="A function without a return statement will return a default value. In the case of a constructor called with the new">
+      <data key="d0">green</data>
+    </node>
+    <edge source="JS01" target="JavaScript has dynamic types.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01" target="Data types are the classifications of data which tells the compiler or interpreter how the programmer intends to use the data.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01" target="JS01.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.5">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.6">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.7">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.1.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.5">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.6">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01" target="JS01.2.3.7">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="Primitive data types are pre-defined by the language, are immutable and have no methods.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1" target="Primitive types in JavaScript include: String, Number, Boolean, Null, Undefined, BigInt, and Symbol.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.5">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.6">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.7">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1" target="JS01.1.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="Non-primitive data types are mutable and can be manipulated.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2" target="Non-primitive types in JavaScript include: Object, Array, and Function.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.5">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.6">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2" target="JS01.2.3.7">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1" target="String is a sequence of characters.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1" target="In JavaScript, strings are enclosed within quotes (either single, double, or backticks).">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1" target="JS01.1.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1" target="JS01.1.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1" target="JS01.1.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1" target="JS01.1.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2" target="Number represents numeric values.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2" target="It includes integers, floats, positive numbers, negative numbers, etc.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2" target="JavaScript provides several functions to manipulate numbers, such as toString() and valueOf().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2" target="JS01.1.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2" target="JS01.1.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2" target="JS01.1.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2" target="JS01.1.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.3" target="Boolean represents logical entities.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3" target="It can only have two values: true or false.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3" target="JavaScript provides comparison operators that return Boolean values.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3" target="JS01.1.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.3" target="JS01.1.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.1" target="Objects are instances which contain a set of key-value pairs.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1" target="The keys (also known as properties) are string identifiers, while the values can be any data type, including other objects.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1" target="JavaScript objects can be user-defined.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1" target="JS01.2.1.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.1" target="JS01.2.1.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.1" target="JS01.2.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.1" target="JS01.2.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2" target="An array is a special type of object that represents a collection of similar type of elements.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2" target="In JavaScript, arrays are zero-indexed: the first element is at index 0.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2" target="JS01.2.2.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2" target="JS01.2.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2" target="JS01.2.2.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2" target="JS01.2.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="A function is a set of statements that performs a specific task.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3" target="Functions in JavaScript are objects, and can be stored in variables, passed as arguments to other functions, and created within and returned from functions.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.1">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.5">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.6">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.3" target="JS01.2.3.7">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2.1" target="The Number object in JavaScript represents numerical date, either integers or floating-point numbers.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.1" target="The syntax for creating a number object is: var val = new Number(number);">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.1" target="If a non-number argument is provided, the argument cannot be converted into a number, it returns NaN (Not-a-Number).">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.1" target="JS01.1.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2.1" target="JS01.1.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.2.2" target="Number properties in JavaScript include MAX_VALUE, MIN_VALUE, NaN, NEGATIVE_INFINITY, POSITIVE_INFINITY, prototype, and constructor.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.2" target="Each property has a specific meaning and use.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each property has a specific meaning and use." target="JS01.2.2.2">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each property has a specific meaning and use." target="JS01.1.1.3">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3.1" target="JavaScript supports several comparison operators that return Boolean values.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3.1" target="These include == (Equal), != (Not Equal), &gt; (Greater than), etc.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.1" target="In JavaScript, objects can be user-defined using the function keyword.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.1" target="User-defined objects can have properties and methods.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="The Array object in JavaScript lets you store multiple values in a single variable.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="It stores a fixed-size sequential collection of elements of the same type.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="The syntax for creating an Array object is: var fruits = new Array( &quot;apple&quot;, &quot;orange&quot;, &quot;mango&quot; );">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="Elements in an array are accessed by their index.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="JS01.2.2.2">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2.1" target="JS01.2.2.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.2.2.2" target="Array properties in JavaScript include constructor and index.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.1" target="Functions in JavaScript are defined using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.1" target="The syntax for defining a function is function functionname(parameter-list) { statements }.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.2" target="Functions in JavaScript are called by using the function name followed by a list of arguments enclosed in parentheses.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.2" target="The syntax for calling a function is functionname(argument-list).">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.3" target="Functions in JavaScript can be reusable, meaning they can be called multiple times within the program.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.3" target="Reusability of functions eliminates the need of writing the same code again and again.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.1" target="A string literal in JavaScript is zero or more characters enclosed in single (') or double (&quot;) quotes.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.1" target="Backticks (`) can also be used to define a string literal in JavaScript.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.3" target="Arithmetic operators are used to perform arithmetic on numbers.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.3" target="These include + (Addition), - (Subtraction), * (Multiplication), / (Division), etc.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.4" target="Null is a special keyword in JavaScript that represents no value or no object.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.4" target="It is not the same as an empty string (&quot;&quot;) or 0, it is a JavaScript keyword.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.5" target="Undefined in JavaScript means a variable has been declared but has not yet been assigned a value.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.5" target="It is not the same as an empty string (&quot;&quot;) or null, it is a JavaScript keyword.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.6" target="BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53 - 1.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.6" target="BigInt can be used when you need to reliably store and operate on large integers beyond the safe integer limit for Numbers.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.7" target="Symbol is a built-in object in JavaScript whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that’s unique and immutable.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.7" target="Symbols are often used to create private object members.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.2" target="A constructor is a function that creates and initializes an object. JavaScript provides a special constructor function called Object() to build the object.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.2" target="The return value of the Object() constructor is assigned to a variable. The variable contains a reference to the new object.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.3" target="The prototype property allows you to add properties and methods to any object.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.3" target="Prototype is a global property which is available with almost all the objects.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.3" target="The Array constructor in JavaScript is used to create Array objects.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.3" target="The syntax for creating an Array object is: var arrayName = new Array(element0, element1, ..., elementN);">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.2" target="The String object in JavaScript is used to represent and manipulate a sequence of characters.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.2" target="Strings are useful for holding data that can be represented in text format.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.2" target="JS01.1.1.3">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1.2" target="JS01.1.1.4">
+      <data key="d1">yellow</data>
+    </edge>
+    <edge source="JS01.1.1.3" target="String properties in JavaScript include length and prototype.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3.2" target="Logical operators are used to determine the logic between variables or values.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.3.2" target="These include &amp;&amp; (and), || (or), and ! (not).">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.4" target="The Function constructor in JavaScript creates a new Function object.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.4" target="In JavaScript, function body (the code inside) is not compiled during the build, but is translated on-the-fly, so it can be changed at run-time.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.4" target="String methods in JavaScript include charAt(), charCodeAt(), concat(), indexOf(), lastIndexOf(), localeCompare(), match(), replace(), search(), slice(), split(), substr(), substring(), toLocaleLowerCase(), toLocaleUpperCase(), toLowerCase(), toString(), toUpperCase(), trim(), valueOf().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.1.4" target="Each method has a specific meaning and use.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each method has a specific meaning and use." target="JS01.1.2.4">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each method has a specific meaning and use." target="JS01.2.1.4">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each method has a specific meaning and use." target="JS01.2.2.4">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="Each method has a specific meaning and use." target="JS01.2.3.5">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.1.2.4" target="Number methods in JavaScript include toExponential(), toFixed(), toLocaleString(), toPrecision(), toString(), valueOf().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.1.4" target="Object methods in JavaScript include hasOwnProperty(), isPrototypeOf(), propertyIsEnumerable(), toLocaleString(), toString(), valueOf().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.2.4" target="Array methods in JavaScript include concat(), every(), filter(), forEach(), indexOf(), isArray(), join(), lastIndexOf(), map(), pop(), push(), reduce(), reduceRight(), reverse(), shift(), slice(), some(), sort(), splice(), toString(), unshift().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.5" target="Function methods in JavaScript include apply(), call(), toString().">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.6" target="Function parameters are the names listed in the function definition.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.6" target="Function arguments are the real values received by the function when it is invoked.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.7" target="The return statement stops the execution of a function and returns a value from that function.">
+      <data key="d1">red</data>
+    </edge>
+    <edge source="JS01.2.3.7" target="A function without a return statement will return a default value. In the case of a constructor called with the new">
+      <data key="d1">red</data>
+    </edge>
+  </graph>
+</graphml>

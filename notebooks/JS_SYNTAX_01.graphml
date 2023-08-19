@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="JS1" />
+    <node id="Defines the structure and rules of JavaScript code." />
+    <node id="Involves the use of specific symbols, characters, and rules." />
+    <node id="JS1.1" />
+    <node id="Javascript is a case-sensitive language." />
+    <node id="Whitespaces, tabs, and newlines are allowed and ignored in JavaScript programs." />
+    <node id="JS1.1.1" />
+    <node id="JavaScript identifiers are case sensitive." />
+    <node id="'myVariable' and 'myvariable' are two different identifiers in JavaScript." />
+    <node id="JS1.1.2" />
+    <node id="Javascript ignores spaces, tabs, and newlines that appear between tokens in the programs." />
+    <node id="They can be used to format and indent your programs in a neat and consistent way." />
+    <node id="JS1.2" />
+    <node id="Statements are commands to the JavaScript interpreter." />
+    <node id="They are executed for their effects and do not have values." />
+    <node id="JS1.2.1" />
+    <node id="Each statement is an instruction." />
+    <node id="Statements are generally ended with a semicolon (;), but they can be omitted if each statement is placed on a separate line." />
+    <node id="JS1.2.1.1" />
+    <node id="Semicolons are used to separate statements." />
+    <node id="Semicolons can be omitted if each statement is placed on a separate line." />
+    <node id="JS1.2.2" />
+    <node id="Block statements are used to combine multiple statements." />
+    <node id="They are enclosed in curly braces '{}'." />
+    <node id="JS1.2.2.1" />
+    <node id="'if' statement blocks are used to execute code if a specified condition is true." />
+    <node id="They are enclosed in curly braces '{}' and are preceded by the 'if' keyword and the condition in parentheses." />
+    <node id="JS1.2.2.2" />
+    <node id="'for' loop blocks are used to execute code a specified number of times." />
+    <node id="They are enclosed in curly braces '{}' and are preceded by the 'for' keyword and initialization, condition, and final-expression in parentheses." />
+    <node id="JS1.2.3" />
+    <node id="Conditional statements execute or skip other statements depending on the value of a specified expression." />
+    <node id="Include 'if', 'else if', 'else', 'switch' statements." />
+    <node id="JS1.2.3.1" />
+    <node id="'if' statements execute a block of code if a specified condition is true." />
+    <node id="They are followed by a condition in parentheses." />
+    <node id="JS1.2.3.2" />
+    <node id="'else if' statements execute a block of code if the 'if' condition is false and the 'else if' condition is true." />
+    <node id="JS1.2.3.3" />
+    <node id="'else' statements execute a block of code if the 'if' and 'else if' conditions are false." />
+    <node id="They are not followed by a condition." />
+    <node id="JS1.2.4" />
+    <node id="Loop statements cause JavaScript to execute the same statement or sequence of statements multiple times." />
+    <node id="Include 'for', 'while', and 'do...while' loops." />
+    <node id="JS1.2.4.1" />
+    <node id="'for' loops execute a block of code a specified number of times." />
+    <node id="They are followed by initialization, condition, and final-expression in parentheses." />
+    <node id="JS1.2.4.2" />
+    <node id="'while' loops execute a block of code as long as a specified condition is true." />
+    <node id="JS1.2.4.3" />
+    <node id="'do...while' loops execute a block of code at least once, and then as long as a specified condition is true." />
+    <node id="They are followed by a condition in parentheses after the 'while' keyword." />
+    <node id="JS1.2.5" />
+    <node id="Control statements alter the order of execution of statements." />
+    <node id="Include 'break', 'continue', 'return', and 'throw' statements." />
+    <node id="JS1.2.5.1" />
+    <node id="'break' statements are used to terminate a loop, switch, or in conjunction with a labeled statement." />
+    <node id="They are followed by the 'break' keyword." />
+    <node id="JS1.2.5.2" />
+    <node id="'continue' statements are used to skip the rest of the current loop iteration and continue with the next one." />
+    <node id="They are followed by the 'continue' keyword." />
+    <node id="JS1.2.5.3" />
+    <node id="'return' statements are used to end function execution and specify a value to be returned to the function caller." />
+    <node id="They are followed by the 'return' keyword and the value to return." />
+    <node id="JS1.2.5.4" />
+    <node id="'throw' statements are used to create custom errors." />
+    <node id="They are followed by the 'throw' keyword and the value to throw." />
+    <node id="JS1.3" />
+    <node id="Expressions are phrases of JavaScript that the interpreter can evaluate to produce a value." />
+    <node id="They include literals, identifiers, operators, function calls, and object methods." />
+    <node id="JS1.3.1" />
+    <node id="Primary expressions are the simplest expressions that stand alone." />
+    <node id="Include literals, certain keywords (this, null, true, false), and variable references." />
+    <node id="JS1.3.2" />
+    <node id="Object and array initializers are expressions whose value is a newly created object or array." />
+    <node id="Use curly braces '{}' for objects and square brackets '[]' for arrays." />
+    <node id="JS1.3.3" />
+    <node id="Function expressions are a way to define anonymous functions." />
+    <node id="They are similar to function declarations, but the function name is optional and the function definition can be used in an expression context." />
+    <node id="JS1.4" />
+    <node id="Variables are named storage locations." />
+    <node id="Identifiers are sequences of letters, digits, and underscores, and must not begin with a digit." />
+    <node id="JS1.4.1" />
+    <node id="Variables are declared using 'var', 'let', or 'const'." />
+    <node id="They must be given a valid identifier name." />
+    <node id="JS1.4.1.1" />
+    <node id="'var' is used to declare a variable." />
+    <node id="Variables declared with 'var' have function scope." />
+    <node id="JS1.4.1.2" />
+    <node id="'let' is used to declare a variable." />
+    <node id="Variables declared with 'let' have block scope." />
+    <node id="JS1.4.1.3" />
+    <node id="'const' is used to declare a variable that cannot be reassigned." />
+    <node id="Variables declared with 'const' have block scope." />
+    <node id="JS1.4.2" />
+    <node id="Variable scope determines the accessibility of variables." />
+    <node id="Variables declared outside of any function have global scope, while variables declared within a function have local scope." />
+    <node id="JS1.5" />
+    <node id="Used to add notes or prevent execution of code." />
+    <node id="Single-line comments start with '//' and multi-line comments are enclosed between '/*' and '*/'." />
+    <node id="JS1.6" />
+    <node id="Functions are defined with the function keyword." />
+    <node id="They encapsulate reusable blocks of code." />
+    <node id="JS1.6.1" />
+    <node id="Functions are declared using the 'function' keyword." />
+    <node id="They have a name, parameters, and a code block." />
+    <node id="JS1.6.2" />
+    <node id="Functions are invoked by appending parentheses to the function name." />
+    <node id="Arguments to be passed to the function are included in the parentheses." />
+    <node id="JS1.7" />
+    <node id="Strict mode introduces better error-checking into your code." />
+    <node id="It is declared by adding 'use strict'; to the beginning of a script or function." />
+    <node id="JS1.7.1" />
+    <node id="'use strict'; is used to declare strict mode." />
+    <node id="It helps catch common coding mistakes and &quot;unsafe&quot; actions." />
+    <edge source="JS1" target="Defines the structure and rules of JavaScript code." />
+    <edge source="JS1" target="Involves the use of specific symbols, characters, and rules." />
+    <edge source="JS1" target="JS1.1" />
+    <edge source="JS1" target="JS1.2" />
+    <edge source="JS1" target="JS1.3" />
+    <edge source="JS1" target="JS1.4" />
+    <edge source="JS1" target="JS1.5" />
+    <edge source="JS1" target="JS1.6" />
+    <edge source="JS1" target="JS1.7" />
+    <edge source="JS1.1" target="Javascript is a case-sensitive language." />
+    <edge source="JS1.1" target="Whitespaces, tabs, and newlines are allowed and ignored in JavaScript programs." />
+    <edge source="JS1.1" target="JS1.1.1" />
+    <edge source="JS1.1" target="JS1.1.2" />
+    <edge source="JS1.1.1" target="JavaScript identifiers are case sensitive." />
+    <edge source="JS1.1.1" target="'myVariable' and 'myvariable' are two different identifiers in JavaScript." />
+    <edge source="JS1.1.2" target="Javascript ignores spaces, tabs, and newlines that appear between tokens in the programs." />
+    <edge source="JS1.1.2" target="They can be used to format and indent your programs in a neat and consistent way." />
+    <edge source="JS1.2" target="Statements are commands to the JavaScript interpreter." />
+    <edge source="JS1.2" target="They are executed for their effects and do not have values." />
+    <edge source="JS1.2" target="JS1.2.1" />
+    <edge source="JS1.2" target="JS1.2.2" />
+    <edge source="JS1.2" target="JS1.2.3" />
+    <edge source="JS1.2" target="JS1.2.4" />
+    <edge source="JS1.2" target="JS1.2.5" />
+    <edge source="JS1.2.1" target="Each statement is an instruction." />
+    <edge source="JS1.2.1" target="Statements are generally ended with a semicolon (;), but they can be omitted if each statement is placed on a separate line." />
+    <edge source="JS1.2.1" target="JS1.2.1.1" />
+    <edge source="JS1.2.1.1" target="Semicolons are used to separate statements." />
+    <edge source="JS1.2.1.1" target="Semicolons can be omitted if each statement is placed on a separate line." />
+    <edge source="JS1.2.2" target="Block statements are used to combine multiple statements." />
+    <edge source="JS1.2.2" target="They are enclosed in curly braces '{}'." />
+    <edge source="JS1.2.2" target="JS1.2.2.1" />
+    <edge source="JS1.2.2" target="JS1.2.2.2" />
+    <edge source="JS1.2.2.1" target="'if' statement blocks are used to execute code if a specified condition is true." />
+    <edge source="JS1.2.2.1" target="They are enclosed in curly braces '{}' and are preceded by the 'if' keyword and the condition in parentheses." />
+    <edge source="JS1.2.2.2" target="'for' loop blocks are used to execute code a specified number of times." />
+    <edge source="JS1.2.2.2" target="They are enclosed in curly braces '{}' and are preceded by the 'for' keyword and initialization, condition, and final-expression in parentheses." />
+    <edge source="JS1.2.3" target="Conditional statements execute or skip other statements depending on the value of a specified expression." />
+    <edge source="JS1.2.3" target="Include 'if', 'else if', 'else', 'switch' statements." />
+    <edge source="JS1.2.3" target="JS1.2.3.1" />
+    <edge source="JS1.2.3" target="JS1.2.3.2" />
+    <edge source="JS1.2.3" target="JS1.2.3.3" />
+    <edge source="JS1.2.3.1" target="'if' statements execute a block of code if a specified condition is true." />
+    <edge source="JS1.2.3.1" target="They are followed by a condition in parentheses." />
+    <edge source="They are followed by a condition in parentheses." target="JS1.2.3.2" />
+    <edge source="They are followed by a condition in parentheses." target="JS1.2.4.2" />
+    <edge source="JS1.2.3.2" target="'else if' statements execute a block of code if the 'if' condition is false and the 'else if' condition is true." />
+    <edge source="JS1.2.3.3" target="'else' statements execute a block of code if the 'if' and 'else if' conditions are false." />
+    <edge source="JS1.2.3.3" target="They are not followed by a condition." />
+    <edge source="JS1.2.4" target="Loop statements cause JavaScript to execute the same statement or sequence of statements multiple times." />
+    <edge source="JS1.2.4" target="Include 'for', 'while', and 'do...while' loops." />
+    <edge source="JS1.2.4" target="JS1.2.4.1" />
+    <edge source="JS1.2.4" target="JS1.2.4.2" />
+    <edge source="JS1.2.4" target="JS1.2.4.3" />
+    <edge source="JS1.2.4.1" target="'for' loops execute a block of code a specified number of times." />
+    <edge source="JS1.2.4.1" target="They are followed by initialization, condition, and final-expression in parentheses." />
+    <edge source="JS1.2.4.2" target="'while' loops execute a block of code as long as a specified condition is true." />
+    <edge source="JS1.2.4.3" target="'do...while' loops execute a block of code at least once, and then as long as a specified condition is true." />
+    <edge source="JS1.2.4.3" target="They are followed by a condition in parentheses after the 'while' keyword." />
+    <edge source="JS1.2.5" target="Control statements alter the order of execution of statements." />
+    <edge source="JS1.2.5" target="Include 'break', 'continue', 'return', and 'throw' statements." />
+    <edge source="JS1.2.5" target="JS1.2.5.1" />
+    <edge source="JS1.2.5" target="JS1.2.5.2" />
+    <edge source="JS1.2.5" target="JS1.2.5.3" />
+    <edge source="JS1.2.5" target="JS1.2.5.4" />
+    <edge source="JS1.2.5.1" target="'break' statements are used to terminate a loop, switch, or in conjunction with a labeled statement." />
+    <edge source="JS1.2.5.1" target="They are followed by the 'break' keyword." />
+    <edge source="JS1.2.5.2" target="'continue' statements are used to skip the rest of the current loop iteration and continue with the next one." />
+    <edge source="JS1.2.5.2" target="They are followed by the 'continue' keyword." />
+    <edge source="JS1.2.5.3" target="'return' statements are used to end function execution and specify a value to be returned to the function caller." />
+    <edge source="JS1.2.5.3" target="They are followed by the 'return' keyword and the value to return." />
+    <edge source="JS1.2.5.4" target="'throw' statements are used to create custom errors." />
+    <edge source="JS1.2.5.4" target="They are followed by the 'throw' keyword and the value to throw." />
+    <edge source="JS1.3" target="Expressions are phrases of JavaScript that the interpreter can evaluate to produce a value." />
+    <edge source="JS1.3" target="They include literals, identifiers, operators, function calls, and object methods." />
+    <edge source="JS1.3" target="JS1.3.1" />
+    <edge source="JS1.3" target="JS1.3.2" />
+    <edge source="JS1.3" target="JS1.3.3" />
+    <edge source="JS1.3.1" target="Primary expressions are the simplest expressions that stand alone." />
+    <edge source="JS1.3.1" target="Include literals, certain keywords (this, null, true, false), and variable references." />
+    <edge source="JS1.3.2" target="Object and array initializers are expressions whose value is a newly created object or array." />
+    <edge source="JS1.3.2" target="Use curly braces '{}' for objects and square brackets '[]' for arrays." />
+    <edge source="JS1.3.3" target="Function expressions are a way to define anonymous functions." />
+    <edge source="JS1.3.3" target="They are similar to function declarations, but the function name is optional and the function definition can be used in an expression context." />
+    <edge source="JS1.4" target="Variables are named storage locations." />
+    <edge source="JS1.4" target="Identifiers are sequences of letters, digits, and underscores, and must not begin with a digit." />
+    <edge source="JS1.4" target="JS1.4.1" />
+    <edge source="JS1.4" target="JS1.4.2" />
+    <edge source="JS1.4.1" target="Variables are declared using 'var', 'let', or 'const'." />
+    <edge source="JS1.4.1" target="They must be given a valid identifier name." />
+    <edge source="JS1.4.1" target="JS1.4.1.1" />
+    <edge source="JS1.4.1" target="JS1.4.1.2" />
+    <edge source="JS1.4.1" target="JS1.4.1.3" />
+    <edge source="JS1.4.1.1" target="'var' is used to declare a variable." />
+    <edge source="JS1.4.1.1" target="Variables declared with 'var' have function scope." />
+    <edge source="JS1.4.1.2" target="'let' is used to declare a variable." />
+    <edge source="JS1.4.1.2" target="Variables declared with 'let' have block scope." />
+    <edge source="JS1.4.1.3" target="'const' is used to declare a variable that cannot be reassigned." />
+    <edge source="JS1.4.1.3" target="Variables declared with 'const' have block scope." />
+    <edge source="JS1.4.2" target="Variable scope determines the accessibility of variables." />
+    <edge source="JS1.4.2" target="Variables declared outside of any function have global scope, while variables declared within a function have local scope." />
+    <edge source="JS1.5" target="Used to add notes or prevent execution of code." />
+    <edge source="JS1.5" target="Single-line comments start with '//' and multi-line comments are enclosed between '/*' and '*/'." />
+    <edge source="JS1.6" target="Functions are defined with the function keyword." />
+    <edge source="JS1.6" target="They encapsulate reusable blocks of code." />
+    <edge source="JS1.6" target="JS1.6.1" />
+    <edge source="JS1.6" target="JS1.6.2" />
+    <edge source="JS1.6.1" target="Functions are declared using the 'function' keyword." />
+    <edge source="JS1.6.1" target="They have a name, parameters, and a code block." />
+    <edge source="JS1.6.2" target="Functions are invoked by appending parentheses to the function name." />
+    <edge source="JS1.6.2" target="Arguments to be passed to the function are included in the parentheses." />
+    <edge source="JS1.7" target="Strict mode introduces better error-checking into your code." />
+    <edge source="JS1.7" target="It is declared by adding 'use strict'; to the beginning of a script or function." />
+    <edge source="JS1.7" target="JS1.7.1" />
+    <edge source="JS1.7.1" target="'use strict'; is used to declare strict mode." />
+    <edge source="JS1.7.1" target="It helps catch common coding mistakes and &quot;unsafe&quot; actions." />
+  </graph>
+</graphml>
