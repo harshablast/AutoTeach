@@ -1,0 +1,10 @@
+openai
+langchain
+dotenv
+numpy
+tiktoken
+tqdm
+networkx
+pypdf
+streamlit
+streamlit_agraph

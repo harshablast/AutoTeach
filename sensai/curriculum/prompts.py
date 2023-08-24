@@ -28,7 +28,7 @@ We need to create the concept hierarchy according to this paradigm of understand
 
 1. We need a very exhaustive and granular hierarchy capturing all the concepts within the given topic.
 2. Start from the high-level concept which is the name of the topic, and then break it down further and further. Think of how we can add a "few more" features to create a new family of sub-concepts.
-3. When creating a new family of sub-concepts, remember to create the features of each sub-concept which "differentiate" it from the other sub-concepts.
+3. When creating a new family of sub-concepts, remember to create the critical features of each sub-concept which "differentiate" it from the other sub-concepts.
 4. Here, each "Feature" of each concept will be an objective propositional statement which will always be True. We can think of these as statements which the learners need to consider as True for them to understand the concept.
 5. There is no limit to the number of features a concept can have.
 6. While creating concepts, assign a alphanumeric IDs (Eg: TD1, G4, OSS3.9, etc) to each of them so you can refer to the ID while linking sub-concepts to their respective common concept.
