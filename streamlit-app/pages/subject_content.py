@@ -64,4 +64,7 @@ if st.session_state["create_content_embeddings"]:
     )
 
     st.session_state.subject_content_emb_file_exists = True
-    st.session_state["create_content_embeddings"] = False
+    with open(subject_content_emb_filepath, "w") as f:
+        json.dump(st.session_state.subject_content_emb, f)
+
+    st.experimental_rerun()

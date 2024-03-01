@@ -1,3 +1,4 @@
+import os
 import json
 from abc import (
     ABC,
@@ -5,7 +6,7 @@ from abc import (
 )
 from typing import Any
 
-import openai
+from openai import OpenAI
 from langchain import PromptTemplate
 
 from .prompts import (
@@ -16,6 +17,11 @@ from .prompts import (
     formative_assessment_evaluation_prompt,
     formative_assessment_evaluation_parse_prompt,
     assessment_system_prompt,
+)
+
+client = OpenAI(
+    # This is the default and can be omitted
+    api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
 
@@ -208,12 +214,13 @@ class FormativeAssessment(SensaiAssessment):
                 ),
             },
         ]
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
+        response = client.chat.completions.create(
+            model="gpt-4-turbo-preview",
             messages=assessment_messages,
         )
 
-        response_message = response["choices"][0]["message"]
+        # response_message = response["choices"][0]["message"]
+        response_message = response.choices[0].message
         assessment_messages.append(response_message)
 
         return assessment_messages
@@ -223,17 +230,18 @@ class FormativeAssessment(SensaiAssessment):
         assessment_messages[-1]["content"] = (
             "User Answer: " + assessment_messages[-1]["content"]
         )
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
+        response = client.chat.completions.create(
+            model="gpt-4-turbo-preview",
             messages=assessment_messages,
         )
-        response_message = response["choices"][0]["message"]
+        # response_message = response["choices"][0]["message"]
+        response_message = response.choices[0].message
         assessment_messages.append(response_message)
 
         return assessment_messages
 
     def end_assessment(self, response_message):
-        return "[END]" in response_message["content"]
+        return "[END]" in response_message.content
 
     def evaluate_assessment(self, assessment_messages):
         assessment_messages.append(
@@ -245,13 +253,14 @@ class FormativeAssessment(SensaiAssessment):
             }
         )
 
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
+        response = client.chat.completions.create(
+            model="gpt-4-turbo-preview",
             messages=assessment_messages,
         )
 
-        response_text = response["choices"][0]["message"]["content"]
-        eval_response = openai.ChatCompletion.create(
+        # response_text = response["choices"][0]["message"]["content"]
+        response_text = response.choices[0].message.content
+        eval_response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {
@@ -262,7 +271,8 @@ class FormativeAssessment(SensaiAssessment):
                 }
             ],
         )
-        eval_text = eval_response["choices"][0]["message"]["content"]
+        # eval_text = eval_response["choices"][0]["message"]["content"]
+        eval_text = eval_response.choices[0].message
         eval = json.loads(eval_text)
 
         return eval

@@ -1,0 +1,853 @@
+{
+    "JSX": {
+        "nodes": [
+            {
+                "id": "JSX1",
+                "name": "JSX",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1_F_00",
+                "name": "JSX is a syntax extension for JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1_F_01",
+                "name": "It is used in React to define the structure of the user interface.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1_F_02",
+                "name": "JSX code resembles HTML and can be mixed with JavaScript.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1_F_03",
+                "name": "JSX is translated to regular JavaScript at runtime.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1",
+                "name": "JSX Elements",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1_F_00",
+                "name": "JSX elements are the building blocks of React applications.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1_F_01",
+                "name": "They represent HTML elements and can be stored in variables.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1_F_02",
+                "name": "JSX elements can have attributes similar to HTML elements.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1_F_03",
+                "name": "JSX elements are created using the syntax `<elementName />`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2",
+                "name": "JSX Expressions",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2_F_00",
+                "name": "JSX expressions are written inside curly braces `{}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2_F_01",
+                "name": "They can be used to embed any valid JavaScript expression inside JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2_F_02",
+                "name": "JSX expressions can be used for attribute values, child elements, etc.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.1",
+                "name": "JSX Element Attributes",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.1_F_00",
+                "name": "JSX element attributes are similar to HTML element attributes.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.1_F_01",
+                "name": "They provide additional information about an element.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.1_F_02",
+                "name": "JSX attributes are written in camelCase instead of kebab-case used in HTML.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.1_F_03",
+                "name": "JSX attributes are assigned using the syntax `attributeName={value}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.2",
+                "name": "JSX Nested Elements",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.2_F_00",
+                "name": "JSX elements can be nested within other JSX elements similar to HTML.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.2_F_01",
+                "name": "A JSX expression must have exactly one outermost element.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.2_F_02",
+                "name": "Nested JSX elements are created using the syntax `<parentElement><childElement /></parentElement>`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.3",
+                "name": "JSX Self-closing Elements",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.3_F_00",
+                "name": "JSX elements that don't have any children are self-closing.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.3_F_01",
+                "name": "Self-closing JSX elements are written using the syntax `<elementName />`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4",
+                "name": "JSX Component Elements",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4_F_00",
+                "name": "JSX can represent user-defined components.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4_F_01",
+                "name": "Component elements are created using the syntax `<ComponentName />`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4_F_02",
+                "name": "Component elements can have props as attributes.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1",
+                "name": "JSX Conditional Expressions",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.1_F_00",
+                "name": "JSX supports conditional expressions to dynamically render different elements.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1_F_01",
+                "name": "The ternary operator is commonly used for conditional rendering in JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1_F_02",
+                "name": "JSX conditional expressions are written using the syntax `{condition ? trueExpression : falseExpression}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2",
+                "name": "JSX List Expressions",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.2_F_00",
+                "name": "JSX can render lists of elements by using JavaScript's map() function inside a JSX expression.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2_F_01",
+                "name": "Each element in a list should have a unique \"key\" prop.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2_F_02",
+                "name": "JSX list expressions are written using the syntax `{array.map((item) => <element key={item.id} />)}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.3",
+                "name": "JSX Expression Containers",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.3_F_00",
+                "name": "JSX uses curly braces `{}` as expression containers.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.3_F_01",
+                "name": "Any valid JavaScript expression can be put inside the curly braces in JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.3_F_02",
+                "name": "The expression inside the curly braces is evaluated and the result is inserted into the JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.5",
+                "name": "JSX Element Classes",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.5_F_00",
+                "name": "JSX uses the className attribute instead of the class attribute used in HTML.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.5_F_01",
+                "name": "The className attribute is used to apply CSS classes to JSX elements.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.5_F_02",
+                "name": "JSX element classes are assigned using the syntax `className={className}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.6",
+                "name": "JSX Fragment",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.6_F_00",
+                "name": "JSX Fragment is a common pattern for a group of elements to be siblings.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.6_F_01",
+                "name": "JSX Fragment can be written using `<></>` or `<React.Fragment></React.Fragment>`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1",
+                "name": "JSX Component Props",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.1_F_00",
+                "name": "Props are used to pass data to components.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1_F_01",
+                "name": "Props are read-only and should not be modified by the component.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1_F_02",
+                "name": "Props are passed to a component using the syntax `<ComponentName propName={value} />`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2",
+                "name": "JSX Component Children",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.2_F_00",
+                "name": "Components can have child components or JSX elements.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2_F_01",
+                "name": "The children of a component can be accessed using `props.children`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2_F_02",
+                "name": "The children of a component are defined using the syntax `<ComponentName>{children}</ComponentName>`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1",
+                "name": "JSX Conditional Rendering with Logical Operators",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.1.1_F_00",
+                "name": "JSX supports conditional rendering using JavaScript logical operators.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1_F_01",
+                "name": "The `&&` operator can be used to conditionally render an element.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1_F_02",
+                "name": "The logical operator conditional rendering is written using the syntax `{condition && <element />}`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2.1",
+                "name": "JSX Key Prop for Lists",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.2.1_F_00",
+                "name": "The \"key\" prop is used in JSX when rendering lists to help React identify which items have changed.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2.1_F_01",
+                "name": "The \"key\" prop should be a unique and constant id.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.2.1_F_02",
+                "name": "The \"key\" prop is assigned using the syntax `<element key={item.id} />`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1.1",
+                "name": "Props in Functional Components",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.1.1_F_00",
+                "name": "Props are passed to functional components as a single object.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1.1_F_01",
+                "name": "Props can be accessed in functional components using the syntax `props.propName`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1.2",
+                "name": "Props in Class Components",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.1.2_F_00",
+                "name": "Props are accessed in class components using `this.props`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.1.2_F_01",
+                "name": "Props can be accessed in class components using the syntax `this.props.propName`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2.1",
+                "name": "Single Child in JSX Component",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.2.1_F_00",
+                "name": "A component can have a single JSX element as a child.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2.1_F_01",
+                "name": "The single child can be accessed using `props.children`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2.2",
+                "name": "Multiple Children in JSX Component",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.1.4.2.2_F_00",
+                "name": "A component can have multiple JSX elements as children.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.1.4.2.2_F_01",
+                "name": "The children are accessed as an array using `props.children`.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.1",
+                "name": "JSX Conditional Rendering with Logical `&&` Operator",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.1.1.1_F_00",
+                "name": "The `&&` operator can be used to conditionally render an element in JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.1_F_01",
+                "name": "If the condition is true, the element after the `&&` operator is rendered.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.1_F_02",
+                "name": "If the condition is false, nothing is rendered.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.2",
+                "name": "JSX Conditional Rendering with Logical `||` Operator",
+                "type": "concept"
+            },
+            {
+                "id": "JSX1.2.1.1.2_F_00",
+                "name": "The `||` operator can be used to provide a default value in JSX.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.2_F_01",
+                "name": "If the condition is true, the element before the `||` operator is rendered.",
+                "type": "feature"
+            },
+            {
+                "id": "JSX1.2.1.1.2_F_02",
+                "name": "If the condition is false, the element after the `||` operator is rendered.",
+                "type": "feature"
+            }
+        ],
+        "edges": [
+            {
+                "source": "JSX1",
+                "target": "JSX1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1",
+                "target": "JSX1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1",
+                "target": "JSX1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1",
+                "target": "JSX1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1",
+                "target": "JSX1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1",
+                "target": "JSX1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.1",
+                "target": "JSX1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.1",
+                "target": "JSX1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.1",
+                "target": "JSX1.1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.1",
+                "target": "JSX1.1.1_F_03",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.2",
+                "target": "JSX1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.2",
+                "target": "JSX1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.2",
+                "target": "JSX1.1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.3",
+                "target": "JSX1.1.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.3",
+                "target": "JSX1.1.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.3",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4",
+                "target": "JSX1.1.4_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4",
+                "target": "JSX1.1.4_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4",
+                "target": "JSX1.1.4_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.4",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.1",
+                "target": "JSX1.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1",
+                "target": "JSX1.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1",
+                "target": "JSX1.2.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.2",
+                "target": "JSX1.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.2",
+                "target": "JSX1.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.2",
+                "target": "JSX1.2.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.3",
+                "target": "JSX1.2.3_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.3",
+                "target": "JSX1.2.3_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.3",
+                "target": "JSX1.2.3_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2",
+                "target": "JSX1.2.3",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.5",
+                "target": "JSX1.1.5_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.5",
+                "target": "JSX1.1.5_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.5",
+                "target": "JSX1.1.5_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.5",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.6",
+                "target": "JSX1.1.6_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.6",
+                "target": "JSX1.1.6_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1",
+                "target": "JSX1.1.6",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.1",
+                "target": "JSX1.1.4.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1",
+                "target": "JSX1.1.4.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1",
+                "target": "JSX1.1.4.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4",
+                "target": "JSX1.1.4.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.2",
+                "target": "JSX1.1.4.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2",
+                "target": "JSX1.1.4.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2",
+                "target": "JSX1.1.4.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4",
+                "target": "JSX1.1.4.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.1.1",
+                "target": "JSX1.2.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1",
+                "target": "JSX1.2.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1",
+                "target": "JSX1.2.1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1",
+                "target": "JSX1.2.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.2.1",
+                "target": "JSX1.2.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.2.1",
+                "target": "JSX1.2.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.2.1",
+                "target": "JSX1.2.2.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.2",
+                "target": "JSX1.2.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.1.1",
+                "target": "JSX1.1.4.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1.1",
+                "target": "JSX1.1.4.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1",
+                "target": "JSX1.1.4.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.1.2",
+                "target": "JSX1.1.4.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1.2",
+                "target": "JSX1.1.4.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.1",
+                "target": "JSX1.1.4.1.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.2.1",
+                "target": "JSX1.1.4.2.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2.1",
+                "target": "JSX1.1.4.2.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2",
+                "target": "JSX1.1.4.2.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.1.4.2.2",
+                "target": "JSX1.1.4.2.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2.2",
+                "target": "JSX1.1.4.2.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.1.4.2",
+                "target": "JSX1.1.4.2.2",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.1.1.1",
+                "target": "JSX1.2.1.1.1_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1.1",
+                "target": "JSX1.2.1.1.1_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1.1",
+                "target": "JSX1.2.1.1.1_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1",
+                "target": "JSX1.2.1.1.1",
+                "type": "concept"
+            },
+            {
+                "source": "JSX1.2.1.1.2",
+                "target": "JSX1.2.1.1.2_F_00",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1.2",
+                "target": "JSX1.2.1.1.2_F_01",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1.2",
+                "target": "JSX1.2.1.1.2_F_02",
+                "type": "feature"
+            },
+            {
+                "source": "JSX1.2.1.1",
+                "target": "JSX1.2.1.1.2",
+                "type": "concept"
+            }
+        ]
+    }
+}
