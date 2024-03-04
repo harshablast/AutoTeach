@@ -5,9 +5,9 @@ load_dotenv()
 import os
 import sys
 
+from openai import OpenAI
 from pypdf import PdfReader
 from tqdm import tqdm
-from openai import OpenAI
 
 client = OpenAI()
 import json
@@ -28,7 +28,9 @@ def embed_content(content_filepath, intra_cont_progress_bar=None):
         page_text = page.extract_text()
         if len(page_text) < 25:
             continue
-        page_embedding = client.embeddings.create(input=[page_text], model="text-embedding-ada-002")["data"][0]["embedding"]
+        page_embedding = client.embeddings.create(
+            input=[page_text], model="text-embedding-ada-002"
+        )["data"][0]["embedding"]
         content_embeddings.append(
             {
                 "source_content_filepath": content_filepath,

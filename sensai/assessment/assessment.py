@@ -1,23 +1,18 @@
-import os
 import json
-from abc import (
-    ABC,
-    abstractmethod,
-)
+import os
+from abc import ABC, abstractmethod
 from typing import Any
 
-from openai import OpenAI
 from langchain import PromptTemplate
+from openai import OpenAI
 
-from .prompts import (
-    summative_assessment_start_prompt,
-    summative_assessment_evaluation_prompt,
-    summative_assessment_evaluation_parse_prompt,
-    formative_assessment_start_prompt,
-    formative_assessment_evaluation_prompt,
-    formative_assessment_evaluation_parse_prompt,
-    assessment_system_prompt,
-)
+from .prompts import (assessment_system_prompt,
+                      formative_assessment_evaluation_parse_prompt,
+                      formative_assessment_evaluation_prompt,
+                      formative_assessment_start_prompt,
+                      summative_assessment_evaluation_parse_prompt,
+                      summative_assessment_evaluation_prompt,
+                      summative_assessment_start_prompt)
 
 client = OpenAI(
     # This is the default and can be omitted

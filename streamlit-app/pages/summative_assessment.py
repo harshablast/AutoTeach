@@ -1,12 +1,12 @@
-import sys
 import json
+import sys
 import uuid
 
 sys.path.append("../../")
 
-from sensai.assessment import SummativeAssessment
-
 import streamlit as st
+
+from sensai.assessment import SummativeAssessment
 
 st.session_state.update(st.session_state)
 
@@ -76,10 +76,7 @@ if st.session_state["assessment_started"]:
             {"role": "user", "content": user_answer}
         )
 
-        (
-            st.session_state["assessment_messages"],
-            end_assessment,
-        ) = st.session_state[
+        (st.session_state["assessment_messages"], end_assessment,) = st.session_state[
             "sensai_assessment"
         ](st.session_state["assessment_messages"])
 
