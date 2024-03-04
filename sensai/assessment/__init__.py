@@ -1,1 +1,1 @@
-from .assessment import SummativeAssessment, FormativeAssessment
+from .assessment import FormativeAssessment, SummativeAssessment

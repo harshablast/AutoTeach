@@ -1,11 +1,11 @@
+import json
 import os
 import sys
-import json
 
 sys.path.append("./../")
 
 import streamlit as st
-from streamlit_agraph import agraph, Node, Edge, Config
+from streamlit_agraph import Config, Edge, Node, agraph
 
 from sensai.curriculum import concept_hierarchy, learning_outcomes
 from sensai.scripts.create_content_embeddings import create_content_embeddings

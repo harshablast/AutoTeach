@@ -1,10 +1,12 @@
 import networkx as nx
 import numpy as np
-import openai
+from openai import OpenAI
+
+client = OpenAI()
 
 
 def get_best_matches(content_embeddings, query_text, top_k):
-    query_embedding = openai.Embedding.create(
+    query_embedding = client.embeddings.create(
         input=[query_text], model="text-embedding-ada-002"
     )["data"][0]["embedding"]
     content_embedding_vectors = [
