@@ -16,7 +16,9 @@ from .utils import convert_linear_to_graph
 
 import numpy as np
 
-import openai
+from openai import OpenAI
+
+client = OpenAI()
 import tiktoken
 from tqdm import tqdm
 
@@ -40,11 +42,9 @@ def create_concept_hierarchy(
         },
     ]
 
-    starter_response = openai.ChatCompletion.create(
-        model="gpt-4", messages=starter_messages, temperature=temperature
-    )
+    starter_response = client.chat.completions.create(model="gpt-4", messages=starter_messages, temperature=temperature)
 
-    concept_hierarchy = starter_response["choices"][0]["message"]["content"]
+    concept_hierarchy = starter_response.choices[0].message.content
     if verbose:
         print(f"Initial Concept Hierarchy:\n\n{concept_hierarchy}")
     if progress_bar is not None:
@@ -55,22 +55,18 @@ def create_concept_hierarchy(
         )
 
     if content_embeddings is not None:
-        topic_summary_response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[
-                {
-                    "role": "user",
-                    "content": topic_summary_prompt.format(
-                        subject=subject, topic=topic
-                    ),
-                }
-            ],
-            temperature=0,
-        )
-        topic_summary = topic_summary_response["choices"][0]["message"]["content"]
-        query_embedding = openai.Embedding.create(
-            input=[topic_summary], model="text-embedding-ada-002"
-        )["data"][0]["embedding"]
+        topic_summary_response = client.chat.completions.create(model="gpt-4",
+        messages=[
+            {
+                "role": "user",
+                "content": topic_summary_prompt.format(
+                    subject=subject, topic=topic
+                ),
+            }
+        ],
+        temperature=0)
+        topic_summary = topic_summary_response.choices[0].message.content
+        query_embedding = client.embeddings.create(input=[topic_summary], model="text-embedding-ada-002")["data"][0]["embedding"]
         content_embedding_vectors = [
             content_emb_dict["page_embedding"]
             for content_emb_dict in content_embeddings
@@ -110,24 +106,22 @@ def create_concept_hierarchy(
         for chunk_idx, content_chunk in enumerate(
             tqdm(content_chunks, desc="Refining the Concept Hierarchy (content)...")
         ):
-            response = openai.ChatCompletion.create(
-                model="gpt-4",
-                messages=starter_messages
-                + [
-                    {
-                        "role": "user",
-                        "content": concept_hierarchy_refine_content_prompt.format(
-                            content=content_chunk,
-                            concept_hierarchy=concept_hierarchy,
-                            subject=subject,
-                            topic=topic,
-                        ),
-                    }
-                ],
-                temperature=temperature,
-            )
+            response = client.chat.completions.create(model="gpt-4",
+            messages=starter_messages
+            + [
+                {
+                    "role": "user",
+                    "content": concept_hierarchy_refine_content_prompt.format(
+                        content=content_chunk,
+                        concept_hierarchy=concept_hierarchy,
+                        subject=subject,
+                        topic=topic,
+                    ),
+                }
+            ],
+            temperature=temperature)
 
-            concept_hierarchy = response["choices"][0]["message"]["content"]
+            concept_hierarchy = response.choices[0].message.content
             if verbose:
                 print(
                     f"Refine Step (content): {chunk_idx}\nConcept Hierarchy:\n\n{concept_hierarchy}\n\nContent Provided:\n\n{content_chunk}"
@@ -143,36 +137,32 @@ def create_concept_hierarchy(
         for refine_idx in tqdm(
             range(refine_steps), desc="Refining the Concept Hierarchy..."
         ):
-            response = openai.ChatCompletion.create(
-                model="gpt-4",
-                messages=starter_messages
-                + [
-                    {"role": "assistant", "content": concept_hierarchy},
-                    {"role": "user", "content": concept_hierarchy_refine_prompt},
-                ],
-                temperature=temperature,
-            )
+            response = client.chat.completions.create(model="gpt-4",
+            messages=starter_messages
+            + [
+                {"role": "assistant", "content": concept_hierarchy},
+                {"role": "user", "content": concept_hierarchy_refine_prompt},
+            ],
+            temperature=temperature)
 
-            concept_hierarchy = response["choices"][0]["message"]["content"]
+            concept_hierarchy = response.choices[0].message.content
             if verbose:
                 print(
                     f"Refine Step: {refine_idx}\nConcept Hierarchy:\n\n{concept_hierarchy}"
                 )
 
-    parsed_response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-16k",
-        messages=[
-            {
-                "role": "user",
-                "content": concept_hierarchy_parse_prompt.format(
-                    concept_hierarchy=concept_hierarchy
-                ),
-            }
-        ],
-        temperature=0,
-    )
+    parsed_response = client.chat.completions.create(model="gpt-3.5-turbo-16k",
+    messages=[
+        {
+            "role": "user",
+            "content": concept_hierarchy_parse_prompt.format(
+                concept_hierarchy=concept_hierarchy
+            ),
+        }
+    ],
+    temperature=0)
 
-    concept_hierarchy_linear_str = parsed_response["choices"][0]["message"]["content"]
+    concept_hierarchy_linear_str = parsed_response.choices[0].message.content
     concept_hierarchy_linear = json.loads(concept_hierarchy_linear_str)
     concept_hierarchy_graph = convert_linear_to_graph(concept_hierarchy_linear)
 
